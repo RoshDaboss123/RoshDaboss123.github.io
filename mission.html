@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "width=device-width, initial scale 1">
+        <title>Our Mission</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Rajdhani&family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <!--
+        <link rel = "stylesheet" href = "Clharity.css">     
+        <link rel = "stylesheet" href = "mission.css"> 
+        <link rel = "stylesheet" href = "footer.css"> 
+        -->
+        <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
+    </head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(88, 88, 88, 0.6);
+}
+
+nav .logo {
+    padding: 22px 10px;
+    height: 80px;
+    float: left;
+    font-size: 30px;
+    text-transform: uppercase;  
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    padding: 0;
+    display: flex;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+nav ul li a {
+    line-height: 65px;
+    color: #fff;
+    padding: 22px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase; 
+}
+
+nav ul a:hover {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+}
+/*
+.message {
+    font-family: Open Sans;
+    color: white;
+    width: 1500px; 
+    letter-spacing: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+*/
+.demo-button {
+    display: inline-block;
+    font-family: Open Sans;
+    padding: 12px 70px;
+    font-size: 20px;
+    transition-duration: 0.1s;
+    text-align: center;
+    background-color: black;
+    border-color: black;
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 100px;
+}
+.demo-button:hover {
+    opacity: 0.7;
+    transition: box-shadow 0.07s;
+}
+/*
+.content {
+    margin-top: 100px;
+    width: 100%;
+    height: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 35px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+*/
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+:root {
+    --color-primary: #0073ff;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+}
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+}
+.menu-bar ul li {
+    padding: 10px 30px;
+    position: relative;
+}  
+.menu-bar ul li a:hover {
+    color: var(--color-primary);
+}
+.dropdown-menu {
+    display: none;
+}
+.menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+} 
+.menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+}
+  
+.menu-bar ul li:hover .dropdown-menu ul li {
+    width: 250px;
+    padding: 10px;
+}
+.sub-menu {
+    display: none;
+    background-color: var(--color-black-1);
+}
+.hover-me:hover .sub-menu {
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+}
+.container .row {
+    width: 80%;
+    margin: auto;
+}
+.container .row .header {
+    width: 60%;
+    text-align: center;
+    margin:auto;
+    margin-top: 150px;
+}
+.container .row .header h1{
+    padding-top: 30px;
+    font-size: 55px;
+    color: #e19c30;
+}
+.container .row .header p{
+    margin-top: 15px;
+    font-size: 22px;
+    line-height: 1.5;
+    color: black;
+}
+.content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+.content2 .card {
+    flex:1;
+    margin: 50px 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    background-color: red;
+}
+
+.content2 p {
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    line-height: 2;
+    
+}
+@media screen and (max-width: 768px) {
+    .content2 {
+        flex-direction: column;
+    }
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contain{
+	max-width: 1000px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+    margin-top: 220px;
+	background-color: #24262b;
+    padding: 50px 50px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 60px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 600;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+</style>
+    <body>
+        <div class = "menu-bar">
+            <nav>
+                <div class = "logo">CLHARITY</div>
+                <ul>
+                    <li><a href = "index.html"><strong>Home</strong></a></li>
+                    <li><a href = "#"><strong>About Us</strong></a>
+                    <div class="dropdown-menu">
+                        <ul>
+                          <li><a href="mission.html"><strong>Our Mission / Process</strong></a></li>
+                          <li><a href="team.html"><strong>Our Team</strong></a></li>
+                          <li class = "hover-me"><a href = "#"><strong>Benefits</strong></a>
+                            <div class = "sub-menu">
+                                <ul>
+                                    <li><a href="donorbenefits.html"><strong>Donor Benefits</strong></a></li>
+                                    <li><a href="charitybenefits.html"><strong>Charity Benefits</strong></a></li>
+                                </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>   
+                    <li><a href = "services.html"><strong>Services</strong></a></li>
+                    <li><a href = "contact.html"><strong>Contact</strong></a></li>
+                    <li><a href = "login.html"><strong>Login</strong></a></li>
+                    <li><a href = "signup.html" style = "margin-right: 50px;"><strong>Sign Up</strong></a></li>
+                </ul>
+            </nav>
+        </div>
+
+    <body style = "background-color: rgb(248, 248, 248);">
+        <div class = "container">
+            <div class = "row">
+                <div class = "header">
+                    <h1><strong>OUR MISSION</strong></h1>
+                    <p><strong>Donations are often pocketed by high - level officers, instead of being 
+                        put towards a meaningful cause. We want to transparentize the virtual wall between donors and their donations, 
+                        making it so donors are comfortable knowing that their money was used for its intended purposes.</strong></p>
+                </div>
+                <div class = "header">
+                    <h1><strong>OUR PROCESS</strong></h1>
+                </div>
+                <div class = "content2"> 
+                        <p><strong>Donors - Step 1: The experience of Clharity begins with a donation through our website, which ends up in an inflation 
+                            - free storage system. A small transaction fee is deducted from the donation. Clharity begins to monitor the
+                             finances of the charity and ensuring the money has been used for its intended purposes.
+                        </strong></p>
+                        <p><strong>Donors - Step 2: Donors are notified as soon as their donations have been spent and explain the gracious impact of their donation.
+                            A filtered document is sent detailing the usage of the money. 
+                            In the event that charities use the donation for an unintended purpose, Clharity will inform donors of that. 
+                        </strong></p>
+                        <p><strong>Charities - The first step is reaching an agreement about the best-intended use of the funds donated to them.
+                            After a listing has been established, we begin to ensure their transparency as they list on our site as an official charity. We present the charity with our exclusive and highly coveted benefits. </strong></p>
+                </div>
+            </div>
+        </div>
+        <footer class = "footer">
+            <div class = "contain">
+                <div class = "row">
+                    <div class = "footer-col">
+                        <h4>Clharity</h4>
+                        <ul>
+                            <li><a href = "mission.html">Our Mission</a></li>
+                            <li><a href = "team.html">Our Team</a></li>
+                            <li><a href = "charitybenefits.css">Charity Benefits</a></li>
+                            <li><a href = "donorbenefits.css">Donor Benefits</a></li>
+                            <li><a href = "services.html">Services</a></li>
+                        </ul>
+                    </div>
+                    <div class = "footer-col">
+                        <h4>Account</h4>
+                        <ul>
+                            <li><a href = "login.html">Log In</a></li>
+                            <li><a href = "signup.html">Sign Up</a></li>
+                        </ul>
+                    </div>
+                    <div class = "footer-col">
+                        <h4>Follow Us</h4>
+                        <div class = "social-links">
+                            <a href = "#"><i class = "fab fa-twitter"></i></a>
+                            <a href = "#"><i class = "fab fa-linkedin-in"></i></a>
+                            <a href = "#"><i class = "fab fa-instagram"></i></a>
+                            <a href = "#"><i class = "fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body> 
+</html>
