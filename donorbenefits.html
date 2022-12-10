@@ -7,18 +7,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Rajdhani&family=Roboto+Condensed&display=swap" rel="stylesheet">
-        <!--
-        <link rel = "stylesheet" href = "Clharity.css">  
-        <link rel = "stylesheet" href = "donorbenefits.css">  
-        <link rel = "stylesheet" href = "footer.css">
-        -->
         <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
     </head>
 <style>
-    body {
+body {
     margin: 0;
     padding: 0;
     font-family: Montserrat;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 nav {
     position: fixed;
@@ -30,7 +30,6 @@ nav {
     box-sizing: border-box;
     background: rgba(88, 88, 88, 0.6);
 }
-
 nav .logo {
     padding: 22px 10px;
     height: 80px;
@@ -39,7 +38,6 @@ nav .logo {
     text-transform: uppercase;  
     color: #fff;
 }
-
 nav ul {
     list-style: none;
     float: right;
@@ -48,7 +46,6 @@ nav ul {
     margin-top: 0%;
     margin-bottom: 0%;
 }
-
 nav ul li a {
     line-height: 65px;
     color: #fff;
@@ -62,16 +59,6 @@ nav ul a:hover {
     background: rgba(0, 0, 0, 0.7);
     border-radius: 6px;
 }
-/*
-.message {
-    font-family: Open Sans;
-    color: white;
-    width: 1500px; 
-    letter-spacing: 10px;
-    font-size: 40px;
-    text-align: center;
-}
-*/
 .demo-button {
     display: inline-block;
     font-family: Open Sans;
@@ -89,21 +76,6 @@ nav ul a:hover {
     opacity: 0.7;
     transition: box-shadow 0.07s;
 }
-/*
-.content {
-    margin-top: 100px;
-    width: 100%;
-    height: 50%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 35px;
-    letter-spacing: 15px;
-    text-transform: uppercase;
-}
-*/
 .center {
     display: flex;
     justify-content: center;
@@ -141,7 +113,6 @@ nav ul a:hover {
     display: block;
     margin: 10px;
 }
-  
 .menu-bar ul li:hover .dropdown-menu ul li {
     width: 250px;
     padding: 10px;
@@ -157,14 +128,7 @@ nav ul a:hover {
     margin-left: 140px;
     
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    background: white;
-}
+
 .accordian {
     margin: 60px auto;
     width: 600px;
@@ -210,11 +174,6 @@ input[type="radio"]{
 }
 .accordian input[type="radio"]:checked + label::before{
     content: "-";
-}
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 }
 .contain{
 	max-width: 1000px;
@@ -298,11 +257,6 @@ ul{
     width: 100%;
 }
 }
-
-
-
-
-
 </style>
     <body>
         <br>
@@ -327,22 +281,21 @@ ul{
             </li>
             <li>
                 <input type = "radio" name = "accordian" id = "second" checked>
-                <label for = "second">Automatic Authentication</label> 
+                <label for = "second">Placeholder</label> 
                 <div class = "content">
                     <p>
-                        <strong>Our platform allows donors to search the world for the causes that are truly close to their heart, without having to worry about
-			        the possibility that their contributions aren't being spent in the ways it was intended to be spent. Clharity employs an integrated
-				system that ensures the efficiency of charity growth and spending, as we gain reliable data through sources that don't involve third 
-				parties.
+                        <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</strong>
                     </p>
                 </div>
             </li>
             <li>
                 <input type = "radio" name = "accordian" id = "third" checked>
-                <label for = "third">Refined Metrics</label> 
+                <label for = "third">Placeholder</label> 
                 <div class = "content">
                     <p>
-                        <strong>We understand it takes donors quite some time to become knowledgable on the goals, responsibilities, and efficiency of charities they contribute to, so Clharity makes that process easy. We provide donors with comprehensive metrics that reduce the time required to investigate charities, as these metrics incorporate numerous charity facets of expenditures into one number. Our metrics are designed to hollistically evaluate charities, such that no stone is left unturned in the greatness of the cause, giving donors a true impression of the likely result of their donation. </strong>
+                        <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</strong>
                     </p>
                 </div>
             </li>
@@ -409,5 +362,4 @@ ul{
         </div> 
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     </body>
-
 </html>
