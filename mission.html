@@ -7,18 +7,22 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Rajdhani&family=Roboto+Condensed&display=swap" rel="stylesheet">
-        <!--
-        <link rel = "stylesheet" href = "Clharity.css">     
-        <link rel = "stylesheet" href = "mission.css"> 
-        <link rel = "stylesheet" href = "footer.css"> 
-        -->
         <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
     </head>
 <style>
-    body {
+body {
     margin: 0;
     padding: 0;
     font-family: Montserrat;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:rgb(255, 255, 255);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 nav {
     position: fixed;
@@ -30,7 +34,6 @@ nav {
     box-sizing: border-box;
     background: rgba(88, 88, 88, 0.6);
 }
-
 nav .logo {
     padding: 22px 10px;
     height: 80px;
@@ -39,7 +42,6 @@ nav .logo {
     text-transform: uppercase;  
     color: #fff;
 }
-
 nav ul {
     list-style: none;
     float: right;
@@ -48,7 +50,6 @@ nav ul {
     margin-top: 0%;
     margin-bottom: 0%;
 }
-
 nav ul li a {
     line-height: 65px;
     color: #fff;
@@ -57,58 +58,9 @@ nav ul li a {
     font-size: 12px;
     text-transform: uppercase; 
 }
-
 nav ul a:hover {
     background: rgba(0, 0, 0, 0.7);
     border-radius: 6px;
-}
-/*
-.message {
-    font-family: Open Sans;
-    color: white;
-    width: 1500px; 
-    letter-spacing: 10px;
-    font-size: 40px;
-    text-align: center;
-}
-*/
-.demo-button {
-    display: inline-block;
-    font-family: Open Sans;
-    padding: 12px 70px;
-    font-size: 20px;
-    transition-duration: 0.1s;
-    text-align: center;
-    background-color: black;
-    border-color: black;
-    color: white;
-    letter-spacing: 2px;
-    margin-top: 100px;
-}
-.demo-button:hover {
-    opacity: 0.7;
-    transition: box-shadow 0.07s;
-}
-/*
-.content {
-    margin-top: 100px;
-    width: 100%;
-    height: 50%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 35px;
-    letter-spacing: 15px;
-    text-transform: uppercase;
-}
-*/
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
 }
 :root {
     --color-primary: #0073ff;
@@ -141,7 +93,6 @@ nav ul a:hover {
     display: block;
     margin: 10px;
 }
-  
 .menu-bar ul li:hover .dropdown-menu ul li {
     width: 250px;
     padding: 10px;
@@ -157,66 +108,6 @@ nav ul a:hover {
     margin-left: 140px;
     
 }
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-.container {
-    width: 100%;
-}
-.container .row {
-    width: 80%;
-    margin: auto;
-}
-.container .row .header {
-    width: 60%;
-    text-align: center;
-    margin:auto;
-    margin-top: 150px;
-}
-.container .row .header h1{
-    padding-top: 30px;
-    font-size: 55px;
-    color: #e19c30;
-}
-.container .row .header p{
-    margin-top: 15px;
-    font-size: 22px;
-    line-height: 1.5;
-    color: black;
-}
-.content2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:auto;
-}
-.content2 .card {
-    flex:1;
-    margin: 50px 20px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-    background-color: red;
-}
-
-.content2 p {
-    font-size: 20px;
-    color: black;
-    padding: 10px;
-    font-weight: bold;
-    line-height: 2;
-    
-}
-@media screen and (max-width: 768px) {
-    .content2 {
-        flex-direction: column;
-    }
-}
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 .contain{
 	max-width: 1000px;
 	margin:auto;
@@ -225,11 +116,7 @@ nav ul a:hover {
 	display: flex;
 	flex-wrap: wrap;
 }
-ul{
-	list-style: none;
-}
 .footer{
-    margin-top: 220px;
 	background-color: #24262b;
     padding: 50px 50px;
 }
@@ -288,81 +175,160 @@ ul{
 	color: #24262b;
 	background-color: #ffffff;
 }
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
+.container{
+    margin: 0 auto; 
+    text-align: center;
+    display: flex;
+    width: 1100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+.container .box {
+    position: relative;
+    width: 350px;
+    background: rgb(224, 224, 224);
+    padding: 100px 40px 100px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+    
 }
-@media(max-width: 574px){
-  .footer-col{
+.container .box:before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background: #ed6969;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
 }
+.container .box:hover:before{
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.7s;
+}
+.container .box:hover h2{
+    opacity: 1;
+    color: #fff;
+    transform: translateY(-40px);
+}
+.container .box h3{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 2;
+    color: #333;
+    transition: 0.5s;
+}
+.container .box:hover h3 {
+    color: white;
+}
+.container .box:hover p{
+    color: white;
+}
+.container .box p{
+    position: relative;
+    z-index: 2;
+    color: #555;
+    transition: 0.5s;
+}
+.heading {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-family: Montserrat;
+  letter-spacing: 2px;
+  color: rgb(8, 23, 184);
+}
+.heading2 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 23px;
+  font-family: Montserrat;
+  color: rgb(65, 65, 65);
 }
 </style>
-    <body>
-        <div class = "menu-bar">
-            <nav>
-                <div class = "logo">CLHARITY</div>
-                <ul>
-                    <li><a href = "index.html"><strong>Home</strong></a></li>
-                    <li><a href = "#"><strong>About Us</strong></a>
-                    <div class="dropdown-menu">
-                        <ul>
-                          <li><a href="mission.html"><strong>Our Mission / Process</strong></a></li>
-                          <li><a href="team.html"><strong>Our Team</strong></a></li>
-                          <li class = "hover-me"><a href = "#"><strong>Benefits</strong></a>
-                            <div class = "sub-menu">
-                                <ul>
-                                    <li><a href="donorbenefits.html"><strong>Donor Benefits</strong></a></li>
-                                    <li><a href="charitybenefits.html"><strong>Charity Benefits</strong></a></li>
-                                </ul>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>   
-                    <li><a href = "services.html"><strong>Services</strong></a></li>
-                    <li><a href = "contact.html"><strong>Contact</strong></a></li>
-                    <li><a href = "login.html"><strong>Login</strong></a></li>
-                    <li><a href = "signup.html" style = "margin-right: 50px;"><strong>Sign Up</strong></a></li>
-                </ul>
-            </nav>
-        </div>
-
-    <body style = "background-color: rgb(248, 248, 248);">
-        <div class = "container">
-            <div class = "row">
-                <div class = "header">
-                    <h1><strong>OUR MISSION</strong></h1>
-                    <p><strong>Clharity empowers the charitable mindset by creating a revolutionary environment between donors and charities. 
-			    We focus on providing our valued donors with authenticated transactions that enable our users to scour the globe 
-			    for their most personal causes. Our platform embellishes organizations that display a noble cause, allowing charities 
-			    to be evaluated on their goals and responsibilities rather than their publicity.</strong></p>
-                </div>
-                <div class = "header">
-                    <h1><strong>OUR PROCESS</strong></h1>
-                </div>
-                <div class = "content2"> 
-                        <p><strong>Donors - Step 1: The experience of Clharity begins once a donor has identified the cause they
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>     
+    <br>
+    <h1 class="heading"><center>Our Mission</center></h1>
+    <h1 class="heading2"><center><p id = #p1>Clharity empowers the charitable mindset by creating a revolutionary environment between donors and charities. 
+        We focus on providing our valued donors with authenticated transactions that enable our users to scour the globe 
+        for their most personal causes. Our platform embellishes organizations that display a noble cause, allowing charities 
+        to be evaluated on their goals and responsibilities rather than their publicity.</p></center></h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="heading"><center>Our Process</center></h1>
+    <br>
+    <br>
+    <div class = "container">
+        <div class = "box">
+            <h3>Process for Donors - Step 1</h3>
+            <br>
+            <p><strong>The experience of Clharity begins once a donor has identified the cause they
 				wish to support. Donors can then browse through charities across the world to find the perfect
 				charity for their interests. Once a charity has been selected, donors can rest assured their contribution
-				will be utilized in an efficient way that reflects the intention of the transaction.
-                        </strong></p>
-                        <p><strong>Donors - Step 2: Donors are notified through a comprehensive report about the details of their contribution 
+				will be utilized in an efficient way that reflects the intention of the transaction.</strong></p>
+        </div>
+        <div class = "box">
+            <h3>Process for Donors - Step 2</h3>
+            <br>
+            <p><strong>Donors are notified through a comprehensive report about the details of their contribution 
 				as soon as their donation has been spent. This report will detail the use of their contribution in the development 
 				of the charity and in the organization's pursuit of its goal. Once the report is complete, we at Clharity hope that donors 
-				and charities can maintain the relationship they have established through communication and updates on the progress of the mission.
-                        </strong></p>
-                        <p><strong>Charities - The first step is reaching an agreement with Clharity about the best-intended purpose of the contributions they recieve.
-                            After the details have been established, we begin to ensure their transparency as they list on our site as an official charity.
-				By listing on our platform, charities gain access to our diverse donor base, while being presented our one-of-a-kind benefits
-				to help establish and grow support for the organization's cause. We ensure our best possible customer service for all charities, 
-				catering to any need or request that a charity might have in a timely manner.</strong></p>
-                </div>
-            </div>
+				and charities can maintain the relationship they have established through communication and updates on the progress of the mission.</strong></p>
         </div>
-        <footer class = "footer">
+        <div class = "box">
+            <h3>Process for Charities</h3>
+            <br>
+            <p><strong>The first step is reaching an agreement with Clharity about the best-intended purpose of the contributions they recieve.
+                After the details have been established, we begin to ensure their transparency as they list on our site as an official charity.
+                By listing on our platform, charities gain access to our diverse donor base, while being presented our one-of-a-kind benefits
+                to help establish and grow support for the organization's cause. We ensure our best possible customer service for all charities, 
+                catering to any need or request that a charity might have in a timely manner.</strong></p>
+        </div>   
+    </div>
+    <div class = "menu-bar">
+        <nav>
+            <div class = "logo">CLHARITY</div>
+            <ul>
+                <li><a href = "index.html"><strong>Home</strong></a></li>
+                <li><a href = "#"><strong>About Us</strong></a>
+                <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="mission.html"><strong>Our Mission / Process</strong></a></li>
+                      <li><a href="team.html"><strong>Our Team</strong></a></li>
+                      <li class = "hover-me"><a href = "#"><strong>Benefits</strong></a>
+                        <div class = "sub-menu">
+                            <ul>
+                                <li><a href="donorbenefits.html"><strong>Donor Benefits</strong></a></li>
+                                <li><a href="charitybenefits.html"><strong>Charity Benefits</strong></a></li>
+                            </ul>
+                        </div>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </li>   
+                
+                <li><a href = "services.html"><strong>Services</strong></a></li>
+                <li><a href = "contact.html"><strong>Contact</strong></a></li>
+                <li><a href = "login.html"><strong>Login</strong></a></li>
+                <li><a href = "signup.html" style = "margin-right: 50px;"><strong>Sign Up</strong></a></li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer class = "footer">
             <div class = "contain">
                 <div class = "row">
                     <div class = "footer-col">
@@ -370,8 +336,8 @@ ul{
                         <ul>
                             <li><a href = "mission.html">Our Mission</a></li>
                             <li><a href = "team.html">Our Team</a></li>
-                            <li><a href = "charitybenefits.css">Charity Benefits</a></li>
-                            <li><a href = "donorbenefits.css">Donor Benefits</a></li>
+                            <li><a href = "charitybenefits.html">Charity Benefits</a></li>
+                            <li><a href = "donorbenefits.html">Donor Benefits</a></li>
                             <li><a href = "services.html">Services</a></li>
                         </ul>
                     </div>
@@ -394,5 +360,5 @@ ul{
                 </div>
             </div>
         </footer>
-    </body> 
+    </body>
 </html>
