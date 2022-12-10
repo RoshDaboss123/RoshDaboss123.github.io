@@ -7,18 +7,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Rajdhani&family=Roboto+Condensed&display=swap" rel="stylesheet">
-        <!--
-        <link rel = "stylesheet" href = "Clharity.css">   
-        <link rel = "stylesheet" href = "login.css">
-        <link rel = "stylesheet" href = "footer.css"> 
-        -->
         <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
     </head>
 <style>
-    body {
+body {
     margin: 0;
     padding: 0;
     font-family: Montserrat;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 nav {
     position: fixed;
@@ -62,16 +62,6 @@ nav ul a:hover {
     background: rgba(0, 0, 0, 0.7);
     border-radius: 6px;
 }
-/*
-.message {
-    font-family: Open Sans;
-    color: white;
-    width: 1500px; 
-    letter-spacing: 10px;
-    font-size: 40px;
-    text-align: center;
-}
-*/
 .demo-button {
     display: inline-block;
     font-family: Open Sans;
@@ -89,21 +79,6 @@ nav ul a:hover {
     opacity: 0.7;
     transition: box-shadow 0.07s;
 }
-/*
-.content {
-    margin-top: 100px;
-    width: 100%;
-    height: 50%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 35px;
-    letter-spacing: 15px;
-    text-transform: uppercase;
-}
-*/
 .center {
     display: flex;
     justify-content: center;
@@ -141,7 +116,6 @@ nav ul a:hover {
     display: block;
     margin: 10px;
 }
-  
 .menu-bar ul li:hover .dropdown-menu ul li {
     width: 250px;
     padding: 10px;
@@ -155,14 +129,10 @@ nav ul a:hover {
     display: block;
     margin-top: -40px;
     margin-left: 140px;
-    
 }
 body {
     margin: 0;
     padding: 0; 
-    /*
-    background-image: url("china.jpg");  
-    */
     background-size: cover;
     background-position: center;
     object-fit: cover;
@@ -227,11 +197,6 @@ hr {
 img {
     width: 70px; 
     margin-top: -50px;
-}
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 }
 .contain{
 	max-width: 1000px;
@@ -316,6 +281,23 @@ ul{
 }
 }
 </style>
+<body style = "background-color: rgb(235, 232, 232);">
+    <div class = "sign-up-form">
+        <img src = "usericon.png"> 
+        <h1>Sign Up Now</h1>
+        <form action="https://formsubmit.co/nathanw6621@gmail.com" method="POST">    
+            <input type = "email" class = "input-box" placeholder = "Your Email" required>
+            <input type = "password" class = "input-box" placeholder = "Your Password" required>
+            <p><span><input type = "checkbox" required></span><strong> I agree to the terms of service</strong></p>
+            <br>
+            <button type = "button" class = "signup-btn">Sign Up</button>
+            <hr>
+            <p class = "or">OR</p>
+            <button type = "button" class = "twitter-btn">Login with Google</button>
+            <br>
+            <p><strong>Do you have an account?</strong> <a href = "#" onclick="window.location.href = 'login.html';"><strong>Sign in</strong></a></p>
+        </form>
+    </div>
     <div class = "menu-bar">
         <nav>
             <div class = "logo">CLHARITY</div>
@@ -344,54 +326,37 @@ ul{
             </ul>
         </nav>
     </div>
-    <body style = "background-color: rgb(235, 232, 232);">
-        <div class = "sign-up-form">
-            <img src = "usericon.png"> 
-            <h1>Sign Up Now</h1>
-            <form action="https://formsubmit.co/nathanw6621@gmail.com" method="POST">    
-                <input type = "email" class = "input-box" placeholder = "Your Email" required>
-                <input type = "password" class = "input-box" placeholder = "Your Password" required>
-                <p><span><input type = "checkbox" required></span><strong> I agree to the terms of service</strong></p>
-                <br>
-                <button type = "button" class = "signup-btn">Sign Up</button>
-                <hr>
-                <p class = "or">OR</p>
-                <button type = "button" class = "twitter-btn">Login with Google</button>
-                <br>
-                <p><strong>Do you have an account?</strong> <a href = "#" onclick="window.location.href = 'login.html';"><strong>Sign in</strong></a></p>
-            </form>
-        </div>
-        <footer class = "footer">
-            <div class = "contain">
-                <div class = "row">
-                    <div class = "footer-col">
-                        <h4>Clharity</h4>
-                        <ul>
-                            <li><a href = "mission.html">Our Mission</a></li>
-                            <li><a href = "team.html">Our Team</a></li>
-                            <li><a href = "charitybenefits.css">Charity Benefits</a></li>
-                            <li><a href = "donorbenefits.css">Donor Benefits</a></li>
-                            <li><a href = "services.html">Services</a></li>
-                        </ul>
-                    </div>
-                    <div class = "footer-col">
-                        <h4>Account</h4>
-                        <ul>
-                            <li><a href = "login.html">Log In</a></li>
-                            <li><a href = "signup.html">Sign Up</a></li>
-                        </ul>
-                    </div>
-                    <div class = "footer-col">
-                        <h4>Follow Us</h4>
-                        <div class = "social-links">
-                            <a href = "#"><i class = "fab fa-twitter"></i></a>
-                            <a href = "#"><i class = "fab fa-linkedin-in"></i></a>
-                            <a href = "#"><i class = "fab fa-instagram"></i></a>
-                            <a href = "#"><i class = "fab fa-facebook-f"></i></a>
-                        </div>
+    <footer class = "footer">
+        <div class = "contain">
+            <div class = "row">
+                <div class = "footer-col">
+                    <h4>Clharity</h4>
+                    <ul>
+                        <li><a href = "mission.html">Our Mission</a></li>
+                        <li><a href = "team.html">Our Team</a></li>
+                        <li><a href = "charitybenefits.html">Charity Benefits</a></li>
+                        <li><a href = "donorbenefits.html">Donor Benefits</a></li>
+                        <li><a href = "services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class = "footer-col">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href = "login.html">Log In</a></li>
+                        <li><a href = "signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class = "footer-col">
+                    <h4>Follow Us</h4>
+                    <div class = "social-links">
+                        <a href = "#"><i class = "fab fa-twitter"></i></a>
+                        <a href = "#"><i class = "fab fa-linkedin-in"></i></a>
+                        <a href = "#"><i class = "fab fa-instagram"></i></a>
+                        <a href = "#"><i class = "fab fa-facebook-f"></i></a>
                     </div>
                 </div>
             </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
 </html>
