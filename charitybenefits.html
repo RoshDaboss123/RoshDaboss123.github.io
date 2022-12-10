@@ -7,11 +7,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Rajdhani&family=Roboto+Condensed&display=swap" rel="stylesheet">
-        <!--
-        <link rel = "stylesheet" href = "Clharity.css">  
-        <link rel = "stylesheet" href = "donorbenefits.css">  
-        <link rel = "stylesheet" href = "footer.css">
-        -->
         <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
     </head>
 
@@ -20,6 +15,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: Montserrat;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 nav {
     position: fixed;
@@ -31,7 +31,6 @@ nav {
     box-sizing: border-box;
     background: rgba(88, 88, 88, 0.6);
 }
-
 nav .logo {
     padding: 22px 10px;
     height: 80px;
@@ -40,7 +39,6 @@ nav .logo {
     text-transform: uppercase;  
     color: #fff;
 }
-
 nav ul {
     list-style: none;
     float: right;
@@ -49,7 +47,6 @@ nav ul {
     margin-top: 0%;
     margin-bottom: 0%;
 }
-
 nav ul li a {
     line-height: 65px;
     color: #fff;
@@ -58,21 +55,10 @@ nav ul li a {
     font-size: 12px;
     text-transform: uppercase; 
 }
-
 nav ul a:hover {
     background: rgba(0, 0, 0, 0.7);
     border-radius: 6px;
 }
-/*
-.message {
-    font-family: Open Sans;
-    color: white;
-    width: 1500px; 
-    letter-spacing: 10px;
-    font-size: 40px;
-    text-align: center;
-}
-*/
 .demo-button {
     display: inline-block;
     font-family: Open Sans;
@@ -90,21 +76,6 @@ nav ul a:hover {
     opacity: 0.7;
     transition: box-shadow 0.07s;
 }
-/*
-.content {
-    margin-top: 100px;
-    width: 100%;
-    height: 50%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 35px;
-    letter-spacing: 15px;
-    text-transform: uppercase;
-}
-*/
 .center {
     display: flex;
     justify-content: center;
@@ -142,7 +113,6 @@ nav ul a:hover {
     display: block;
     margin: 10px;
 }
-  
 .menu-bar ul li:hover .dropdown-menu ul li {
     width: 250px;
     padding: 10px;
@@ -157,14 +127,6 @@ nav ul a:hover {
     margin-top: -40px;
     margin-left: 140px;
     
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    background: white;
 }
 .accordian {
     margin: 60px auto;
@@ -212,11 +174,7 @@ input[type="radio"]{
 .accordian input[type="radio"]:checked + label::before{
     content: "-";
 }
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 .contain{
 	max-width: 1000px;
 	margin:auto;
@@ -312,10 +270,20 @@ ul{
         <ul class = "accordian">
             <li>
                 <input type = "radio" name = "accordian" id = "first" checked>
-                <label for = "first">Credibility</label> 
+                <label for = "first">Crediblity</label> 
                 <div class = "content">
                     <p>
-                        <strong>The most important aspect to a charity is its credibility. A charity's source of revenue fundamentally comes down to their ability to retain credibility, which is why Clharity has made it our upmost goal to help boost the reputations of efficient charities. By providing a filtered report to all donors, they can rest assured knowing where their hard-earned contributions are going, ultimately creating a personal level of trust between the donor and the charity. Through the formation of such a relationship, this also opens up the door to a system of future recurring donations
+                        <strong>The most important aspect to a charity is its credibility. A charity's source of revenue fundamentally comes down to their ability to retain credibility, which is why Clharity has made it our upmost goal to help boost the reputations of efficient charities. By providing a filtered report to all donors, they can rest assured knowing where their hard-earned contributions are going, ultimately creating a personal level of trust between the donor and the charity. Through the formation of such a relationship, this also opens up the door to a system of future recurring donations. 
+                        </strong>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <input type = "radio" name = "accordian" id = "second" checked>
+                <label for = "second">Personalize Customer Experience</label> 
+                <div class = "content">
+                    <p>
+                        <strong>We offer subscription services to donors, inspiring recurring donations. The service may include any and all forms of media that shows the charity’s growth.
                         </strong>
                     </p>
                 </div>
@@ -325,9 +293,7 @@ ul{
                 <label for = "third">Donor Packages</label> 
                 <div class = "content">
                     <p>
-                        <strong>Donors are given options to donate on a recurring basis by accepting packages distrubuted by the charity.
-				This typically looks like a donor accepting a monthly recurring donation in exchange for a steady stream
-				of media on the development of the charity.
+                        <strong>Donors are given pre - determined amounts to donate to. 
                         </strong>
                     </p>
                 </div>
@@ -337,8 +303,7 @@ ul{
                 <label for = "fourth">Platform</label> 
                 <div class = "content">
                     <p>
-                        <strong>Our charity dashboard allows charities to view their donor analytics (viewer count, donor demographics, etc) into decisions, enabling 
-				charities to market their cause more efficiently.
+                        <strong>Charities can factor analytics (viewer count, donor demographics, etc) into decisions, and scout the competition.
                         </strong>
                     </p>
                 </div>
@@ -360,9 +325,6 @@ ul{
                 </div>
             </li>
         </ul>
-
-
-
         <footer class = "footer">
             <div class = "contain">
                 <div class = "row">
@@ -425,5 +387,4 @@ ul{
         </div> 
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     </body>
-
 </html>
