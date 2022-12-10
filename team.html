@@ -7,18 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Rajdhani&family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <!--
-    <link rel = "stylesheet" href = "Clharity.css">  
-    <link rel = "stylesheet" href = "team.css">   
-    <link rel = "stylesheet" href = "footer.css">
-    -->
     <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
   </head>
 <style>
-    body {
+body {
     margin: 0;
     padding: 0;
     font-family: Montserrat;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 nav {
     position: fixed;
@@ -30,7 +34,6 @@ nav {
     box-sizing: border-box;
     background: rgba(88, 88, 88, 0.6);
 }
-
 nav .logo {
     padding: 22px 10px;
     height: 80px;
@@ -39,7 +42,6 @@ nav .logo {
     text-transform: uppercase;  
     color: #fff;
 }
-
 nav ul {
     list-style: none;
     float: right;
@@ -48,7 +50,6 @@ nav ul {
     margin-top: 0%;
     margin-bottom: 0%;
 }
-
 nav ul li a {
     line-height: 65px;
     color: #fff;
@@ -57,21 +58,10 @@ nav ul li a {
     font-size: 12px;
     text-transform: uppercase; 
 }
-
 nav ul a:hover {
     background: rgba(0, 0, 0, 0.7);
     border-radius: 6px;
 }
-/*
-.message {
-    font-family: Open Sans;
-    color: white;
-    width: 1500px; 
-    letter-spacing: 10px;
-    font-size: 40px;
-    text-align: center;
-}
-*/
 .demo-button {
     display: inline-block;
     font-family: Open Sans;
@@ -89,21 +79,6 @@ nav ul a:hover {
     opacity: 0.7;
     transition: box-shadow 0.07s;
 }
-/*
-.content {
-    margin-top: 100px;
-    width: 100%;
-    height: 50%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 35px;
-    letter-spacing: 15px;
-    text-transform: uppercase;
-}
-*/
 .center {
     display: flex;
     justify-content: center;
@@ -141,7 +116,6 @@ nav ul a:hover {
     display: block;
     margin: 10px;
 }
-  
 .menu-bar ul li:hover .dropdown-menu ul li {
     width: 250px;
     padding: 10px;
@@ -155,21 +129,7 @@ nav ul a:hover {
     display: block;
     margin-top: -40px;
     margin-left: 140px;
-    
 }
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body{
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-}
-
 .title{
   text-align: center;
   text-transform: capitalize;
@@ -186,22 +146,19 @@ body{
   flex-wrap: wrap;
   padding: 40px 0;
 }
-
 .member{
   flex: 1 1 250px;
   margin: 20px;
   text-align: center;
-  padding: 20px 10px;
+  padding: 20px 30px;
   cursor: pointer;
   max-width: 300px;
   transition: all 0.3s;
 }
-
 .member:hover{
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   transform: translateY(-20px);
 }
-
 .member img{
   display: block;
   width: 150px; height: 150px;
@@ -210,16 +167,14 @@ body{
   border-radius: 50%;
   margin: 0 auto;
 }
-
 .member h2{
   text-transform: uppercase;
   font-size: 24px;
   color: #415063;
   margin: 15px 0;
 }
-
 .member p{
-  font-size: 15px;
+  font-size: 14px;
   color: black;
   line-height: 1.6;
 }
@@ -230,11 +185,6 @@ body{
   font-size: 30px;
   font-family: Montserrat;
   letter-spacing: 10px;
-}
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 }
 .contain{
 	max-width: 1000px;
@@ -331,21 +281,21 @@ ul{
               <h2>Max Wu</h2>
               <p>Chief Marketing Officer</p>
               <br>
-              <p>Through Maximus's extensive history in debate, he has garnered the eloquence and interpersonal skills to lead a successful marketing campaign</p>
+              <p>Through Maximus's extensive experience in debate and business, he has garnered both the eloquence and interpersonal skills necessary to direct a team towards conducting a successful marketing campaign.</p>
           </div>
           <div class="member">
               <img src="roshan-modified.png" alt="">
               <h2>Roshan Amble</h2>
               <p>Chief Executive Officer</p>
               <br>
-              <p>A junior who utilizes progressive and analytical thinking for the synthecization of creative and calculated solutions for systemic problems in all academic genres</p>
+              <p>Roshan is a junior who utilizes progressive and analytical thinking for the synthecization of creative and calculated solutions for systemic problems in all academic genres.</p>
           </div>
           <div class="member">
               <img src="nathan-modified.png" alt="">
               <h2>Nathan Wang</h2>
               <p>Chief Product Officer</p>
               <br>
-              <p>As Chief Product Officer, Nathan focuses on constructing the most user - friendly and responsive product possible, utilizing his extensive experience in application development and algorithmic programming.</p>
+              <p>As Chief Product Officer, Nathan focuses on constructing the most user - friendly and responsive product possible, utilizing his extensive experience in application development and algorithmic programming. </p>
           </div>
       </div>
       <div class="team-row">
@@ -354,21 +304,22 @@ ul{
             <h2>Alan Zhong</h2>
             <p>Chief Operating Officer</p>
             <br>
-            <p>Alan comes from a background in biomedical science research, applying his research and leadership capabilities as the Chief Operating Officer - directing the Research & Development Team at Clharity</p>
+            <p>Alan comes from a background in biomedical science research, applying his research and leadership capabilities as the Chief Operating Officer - directing the Research & Development Team at Clharity.</p>
         </div>
         <div class="member">
-            <img src="saanchi-modified.png" alt="">
-            <h2>Saanchi Kapoor</h2>
-            <p>General Counsel</p>
+            <img src="pranav-modified.png" alt="">
+            <h2>Pranav Bellanagari</h2>
+            <p>______</p>
             <br>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum similique eligendi numquam.</p>
+            <p>Using his  research and development skills in engineering and computer science, Pranav conducts enterprise level research to further the growth and development in our services.</p>
         </div>
         <div class="member">
             <img src="gissel-modified.png" alt="">
             <h2>Alex Gisselbrecht</h2>
             <p>VP of Research & Development</p>
             <br>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum similique eligendi numquam.</p>
+            <p>With a background in business, Alex uses his well developed skillset to conduct extensive market research and answer critical questions. As VP of R&D, he uses the data and the powerful insight it provides, to streamline and optimize the business.
+            </p>
         </div>
     </div>
   </section>
@@ -410,8 +361,8 @@ ul{
                 <ul>
                     <li><a href = "mission.html">Our Mission</a></li>
                     <li><a href = "team.html">Our Team</a></li>
-                    <li><a href = "charitybenefits.css">Charity Benefits</a></li>
-                    <li><a href = "donorbenefits.css">Donor Benefits</a></li>
+                    <li><a href = "charitybenefits.html">Charity Benefits</a></li>
+                    <li><a href = "donorbenefits.html">Donor Benefits</a></li>
                     <li><a href = "services.html">Services</a></li>
                 </ul>
             </div>
