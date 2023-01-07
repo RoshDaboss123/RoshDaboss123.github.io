@@ -46,11 +46,12 @@ a:hover, a:active, a:focus {
     border-radius: 25px;
     border: none;
     background-color: #0f87c8;
+    transition: 0.5s ease;
 }
 
 .btn.btn-custom-demo:hover {
-    color: #20212B;
-    box-shadow: inset 0 0 0 30px #33b6fd;
+    color: #fff;
+    opacity: 0.4;   
 }
 .btn.btn-custom-report {
     padding: 12px 20px;
@@ -58,7 +59,7 @@ a:hover, a:active, a:focus {
     font-size: 16px;
     font-weight: 500;
     color: #777777;
-    border-radius: 0;
+    border-radius: 25px;
     border: 2px solid #0f87c8;
     box-shadow: inset 0 0 0 0 #0f87c8;
     transition: ease-out 0.3s;
@@ -68,7 +69,7 @@ a:hover, a:active, a:focus {
 }
 
 .btn.btn-custom-report:hover {
-    color: #20212B;
+    color: #fff;
     box-shadow: inset 0 0 0 30px #33b6fd;
 }
 .btn:focus,
@@ -784,9 +785,51 @@ button.hover{
     font-size: 22px;
     font-weight: 700;
     letter-spacing: 1px;
+    text-align: center;
 }
 .service .service-text p {
     margin: 0;
+}
+.service .fraud-text h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.service .fraud-text p {
+    width: 1000px;
+    margin-left: 20px;
+}
+.service .fraud-icon {
+    position: relative;
+    width: 60px;
+    top: 30%;
+    margin-right: 10px;
+}
+.service .fraud-icon i {
+    position: relative;
+    display: block;
+    color: #3336fd;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 5px;
+}
+.service .fraud-text::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: calc(100% - 10px);
+    top: 5px;
+    background: rgba(0, 0, 0, .1);
+}
+.service .fraud-text::after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 40px;
+    top: calc(50% - 20px);
+    background: #3344fd;
 }
 .donate {
     position: relative;
@@ -877,12 +920,11 @@ button.hover{
 }
 .team .team-img {
     position: relative;
-    overflow: hidden;
+    margin-left: 20px;
 }
 .team .team-img img {
     width: 100%;
     transform: scale(1.1);
-    margin-bottom: -15px;
     transition: .3s;
 }
 
@@ -1065,6 +1107,9 @@ button.hover{
 .contact .contact-form .btn.btn-custom {
     color: blue;
     width: 100%;
+}
+.contact .contact-form .btn.btn-custom:hover {
+    color: #fff;
 }
 .contact .help-block ul {
     margin: 0;
