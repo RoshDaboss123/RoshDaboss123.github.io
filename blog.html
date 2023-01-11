@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Our Blog</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <link href="img/favicon.ico" rel="icon">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat&family=Open+Sans:wght@300&family=Oswald&family=Poppins&family=Rajdhani&family=Roboto&family=Roboto+Condensed&family=Unbounded:wght@500&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link href="blog.css" rel="stylesheet">
+        <link rel='stylesheet' type ="text/css" href = "https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    </head>
+
+    <body>
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <div><a href="index.html"><img class = "resize" src="img/logo.png"></img></a></div>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <!--
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        -->
+                        <a href="services.html" class="nav-item nav-link">Services</a>
+                        <a href="benefits.html" class="nav-item nav-link">Benefits</a>
+                        <!--
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More</a>
+                            <div class="dropdown-menu">
+                                <a href="#ourteam" class="dropdown-item">Meet The Team</a>
+                                <a href="#donatemoney" class="dropdown-item">Donate Now</a>
+                            </div>
+                        </div>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                        -->
+                        <a href="blog.html" class="nav-item nav-link">Education</a>
+                        <a href="login.html" class="nav-item nav-link">Login</a>
+                        <a href="demo.html" class="cta"><button>Demo</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <div><a href="index.html"><img class = "resize" src="img/logo.png"></img></a></div>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="services.html" class="nav-item nav-link">Services</a>
+                        <a href="benefits.html" class="nav-item nav-link">Benefits</a>
+                        <a href="blog.html" class="nav-item nav-link">Education</a>
+                        <a href="login.html" class="nav-item nav-link">Login</a>
+                        <a href="demo.html" class="cta"><button>Demo</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class = "home" id = "home">
+            <div class = "home-text container">
+                <h2 class = "home-title">Learn</h2>
+                <span class = "home-subtitle">Knowledge to Power Your Donation.</span>
+            </div> 
+        </section>
+        <div class = "post-filter container">
+            <span class = "filter-keywords">Filter:</span>
+            <span class = "filter-item active-filter" data-filter='all'>All</span>
+            <span class = "filter-item" data-filter='causes'>Local Causes</span>
+            <span class = "filter-item" data-filter='tech'>Volunteer</span>
+            <span class = "filter-item" data-filter='mobile'>Disaster Relief</span>
+            <span class = "filter-item" data-filter='mental'>Mental Health</span>
+            <span class = "filter-item" data-filter='eco'>Eco-Friendly</span>
+        </div>
+        <section class = "post container">
+            <div class = "post-box mobile">
+                <img src = "img/blog1.jpg" alt = "" class = "post-img">
+                <h2 class = "category">Disaster Relief</h2>
+                <a href = "post-page.html" class = "post-title">
+                    Clharity Blog 1
+                </a>
+                <span class = "post-date">1 Jan 2023</span>
+                <p class = "post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class = "profile img">
+                    <img src = "img/alan-modified.png">
+                    <span class = "profile-name">Writer One</span>
+                </div>
+            </div>
+            <div class = "post-box tech">
+                <img src = "img/blog2.jpg" alt = "" class = "post-img">
+                <h2 class = "category">Volunteer</h2>
+                <a href = "post-page.html" class = "post-title">
+                    Clharity Blog 2
+                </a>
+                <span class = "post-date">1 Jan 2023</span>
+                <p class = "post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class = "profile">
+                    <img src = "img/alan-modified.png">
+                    <span class = "profile-name">Writer Two</span>
+                </div>
+            </div>
+            <div class = "post-box mobile">
+                <img src = "img/blog3.jpg" alt = "" class = "post-img">
+                <h2 class = "category">Disaster Relief</h2>
+                <a href = "post-page.html" class = "post-title">
+                    Clharity Blog 3
+                </a>
+                <span class = "post-date">1 Jan 2023</span>
+                <p class = "post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class = "profile">
+                    <img src = "img/alan-modified.png">
+                    <span class = "profile-name">Writer Three</span>
+                </div>
+            </div>
+            <!--
+                Row Two
+            -->
+            <div class = "post-box causes">
+                <img src = "img/blog4.jpg" alt = "" class = "post-img">
+                <h2 class = "category">Local Causes</h2>
+                <a href = "post-page.html" class = "post-title">
+                    Clharity Blog 4
+                </a>
+                <span class = "post-date">1 Jan 2023</span>
+                <p class = "post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class = "profile img">
+                    <img src = "img/alan-modified.png">
+                    <span class = "profile-name">Writer Four</span>
+                </div>
+            </div>
+            <div class = "post-box tech">
+                <img src = "img/blog5.jpg" alt = "" class = "post-img">
+                <h2 class = "category">Volunteer</h2>
+                <a href = "post-page.html" class = "post-title">
+                    Clharity Blog 5
+                </a>
+                <span class = "post-date">1 Jan 2023</span>
+                <p class = "post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class = "profile">
+                    <img src = "img/alan-modified.png">
+                    <span class = "profile-name">Writer Five</span>
+                </div>
+            </div>
+            <div class = "post-box mobile">
+                <img src = "img/blog6.jpg" alt = "" class = "post-img">
+                <h2 class = "category">Disaster Relief</h2>
+                <a href = "post-page.html" class = "post-title">
+                    Clharity Blog 6
+                </a>
+                <span class = "post-date">1 Jan 2023</span>
+                <p class = "post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class = "profile">
+                    <img src = "img/alan-modified.png">
+                    <span class = "profile-name">Writer Six</span>
+                </div>
+            </div>
+            <!--
+                Row Three
+            -->
+            <div class = "post-box causes">
+                <img src = "img/blog7.jpg" alt = "" class = "post-img">
+                <h2 class = "category">Local Causes</h2>
+                <a href = "post-page.html" class = "post-title">
+                    Clharity Blog 7
+                </a>
+                <span class = "post-date">1 Jan 2023</span>
+                <p class = "post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class = "profile img">
+                    <img src = "img/alan-modified.png">
+                    <span class = "profile-name">Writer Seven</span>
+                </div>
+            </div>
+            <div class = "post-box tech">
+                <img src = "img/blog8.jpg" alt = "" class = "post-img">
+                <h2 class = "category">Volunteer</h2>
+                <a href = "post-page.html" class = "post-title">
+                    Clharity Blog 8
+                </a>
+                <span class = "post-date">1 Jan 2023</span>
+                <p class = "post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class = "profile">
+                    <img src = "img/alan-modified.png">
+                    <span class = "profile-name">Writer Eight</span>
+                </div>
+            </div>
+            <div class = "post-box causes">
+                <img src = "img/blog9.jpg" alt = "" class = "post-img">
+                <h2 class = "category">Local Causes</h2>
+                <a href = "post-page.html" class = "post-title">
+                    Clharity Blog 9
+                </a>
+                <span class = "post-date">1 Jan 2023</span>
+                <p class = "post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class = "profile">
+                    <img src = "img/alan-modified.png">
+                    <span class = "profile-name">Writer Nine</span>
+                </div>
+            </div>
+            <!--
+                Row 4
+            -->
+            <div class = "post-box mental">
+                <img src = "img/blog10.jpg" alt = "" class = "post-img">
+                <h2 class = "category">Mental Health</h2>
+                <a href = "post-page.html" class = "post-title">
+                    Clharity Blog 10
+                </a>
+                <span class = "post-date">1 Jan 2023</span>
+                <p class = "post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class = "profile img">
+                    <img src = "img/alan-modified.png">
+                    <span class = "profile-name">Writer Ten</span>
+                </div>
+            </div>
+            <div class = "post-box mental">
+                <img src = "img/blog11.jpg" alt = "" class = "post-img">
+                <h2 class = "category">Mental Health</h2>
+                <a href = "post-page.html" class = "post-title">
+                    Clharity Blog 11
+                </a>
+                <span class = "post-date">1 Jan 2023</span>
+                <p class = "post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class = "profile">
+                    <img src = "img/alan-modified.png">
+                    <span class = "profile-name">Writer Eleven</span>
+                </div>
+            </div>
+            <div class = "post-box mental">
+                <img src = "img/blog12.jpg" alt = "" class = "post-img">
+                <h2 class = "category">Mental Health</h2>
+                <a href = "post-page.html" class = "post-title">
+                    Clharity Blog 12
+                </a>
+                <span class = "post-date">1 Jan 2023</span>
+                <p class = "post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class = "profile">
+                    <img src = "img/alan-modified.png">
+                    <span class = "profile-name">Writer Twelve</span>
+                </div>
+            </div>
+            <!--
+                Row 5
+            -->
+            <div class = "post-box eco">
+                <img src = "img/blog13.jpg" alt = "" class = "post-img">
+                <h2 class = "category">Eco-Friendly</h2>
+                <a href = "post-page.html" class = "post-title">
+                    Clharity Blog 13
+                </a>
+                <span class = "post-date">1 Jan 2023</span>
+                <p class = "post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class = "profile img">
+                    <img src = "img/alan-modified.png">
+                    <span class = "profile-name">Writer Thirteen</span>
+                </div>
+            </div>
+            <div class = "post-box eco">
+                <img src = "img/blog14.jpg" alt = "" class = "post-img">
+                <h2 class = "category">Eco-Friendly</h2>
+                <a href = "post-page.html" class = "post-title">
+                    Clharity Blog 14
+                </a>
+                <span class = "post-date">1 Jan 2023</span>
+                <p class = "post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class = "profile">
+                    <img src = "img/alan-modified.png">
+                    <span class = "profile-name">Writer Fourteen</span>
+                </div>
+            </div>
+            <div class = "post-box eco">
+                <img src = "img/blog15.jpg" alt = "" class = "post-img">
+                <h2 class = "category">Eco-Friendly</h2>
+                <a href = "post-page.html" class = "post-title">
+                    Clharity Blog 15
+                </a>
+                <span class = "post-date">1 Jan 2023</span>
+                <p class = "post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class = "profile">
+                    <img src = "img/alan-modified.png">
+                    <span class = "profile-name">Writer Fifteen</span>
+                </div>
+            </div>
+        </section>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-contact">
+                            <h2>CONTACT US</h2>
+                            <p><i class="fa fa-map-marker-alt"></i>California, USA - 95126</p>
+                            <p><i class="fa fa-phone-alt"></i>+1 510 945 8683</p>
+                            <p><i class="fa fa-envelope"></i>customerrelations@clharity.com</p>
+                            <div class="footer-social">
+                                <a class="btn btn-custom" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-custom" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-custom" href="    "><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-link">
+                            <h2>Clharity</h2>
+                            <a href="#about">Who We Are</a>
+                            <a href="benefits.html">Benefits</a>
+                            <a href="services.html">Services</a>
+                            <a href="#ourteam">Our Team</a>
+                            <a href="#contact">Contact Us</a>
+                            <a href = "blog.html">Education</a>
+                            <a href="demo.html">Demo</a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-newsletter">
+                            <h2>Newsletter</h2>
+                            <form>
+                                <input class="form-control" placeholder="Email goes here">
+                                <button class="btn btn-custom">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container copyright">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; <a href="">clharity.com</a>, All Right Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/parallax/parallax.min.js"></script>
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+        <script src="js/main.js"></script>
+        <script src ="js/blog.js"></script>
+    </body>
+</html>
