@@ -74,7 +74,6 @@ header h1 {
     background-color: white;
     padding: 5px 10px 10px 10px;
     top: -200%;
-    z-index: 999;
     position: absolute;
     margin: 0 auto;
     width: 75%;
