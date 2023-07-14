@@ -126,7 +126,7 @@ section h2{
 }
 
 .btn{
-    font-weight: 520;
+    font-weight: 530;
     display: inline-block;
     background: gold;
     width: 11rem;
@@ -260,8 +260,8 @@ section h2{
 
 .navlist li a {
     color: #fff;
-    font-size: 0.6rem;
-    font-weight: 800;
+    font-size: 0.8rem;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.8px;
 }
@@ -355,7 +355,7 @@ section h2{
     background: #f9f9ff;
     border-radius: .4rem;
     transition: 0.5s ease;
-    box-shadow: -1rem 1rem 1.2rem 0 rgba(157, 157, 157, 0.5);
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(157, 157, 157, 0.2);
 }
 
 .services-container .card>div {
@@ -382,7 +382,6 @@ section h2{
 }
 
 .services-container .card:hover {
-    box-shadow: -1rem 1rem 1.2rem 0 rgba(157, 157, 157, 0.5);
     cursor: pointer;
     transform: scale(1.05);
     transition: 0.5s ease all;
@@ -433,6 +432,7 @@ section h2{
     gap: 2rem;
 }
 
+
 .blog-container .card {
     background: #f9f9f9;
     cursor: default;
@@ -446,6 +446,10 @@ section h2{
 
 .blog-container .card .info {
     padding: 0.5rem 1rem;
+}
+
+.blog-container .card .info h6 {
+    color: rgb(0, 136, 255);
 }
 
 .blog-container .card .info h4 a{
@@ -499,7 +503,7 @@ section h2{
 
 .blog-container .card .tag span {
     padding: .5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     background: goldenrod;
 }
 
@@ -543,6 +547,8 @@ section h2{
     grid-template-columns: 40% 60%;
     gap: 2rem;
     margin-top: 2rem;
+    background: #f4f2f0;
+    padding: 3rem 3rem;
 }
 
 .contact-container .left .box{
@@ -581,7 +587,9 @@ section h2{
     width: 100%;
     padding: 1rem;
     border-radius: 0;
-    background: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 2); 
+    border: none; 
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .footer{
@@ -609,6 +617,11 @@ footer .box h4{
 
 footer .box li{
     margin: .3rem 0;
+}
+
+footer .box li:hover {
+    opacity: 0.7;
+    transition: 0.5s ease all;
 }
 
 .footer .box a:hover{
@@ -887,7 +900,7 @@ footer .box p{
 }
 
 .features .image {
-    border: 0.7rem solid gray;
+    border: none;
     box-shadow: var(--shadow);
     z-index: -1;
 }
@@ -915,6 +928,11 @@ footer .box p{
 
 .banner .counter-box h2 {
     font-size: 2.5rem;
+}
+
+.banner .counter-box:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
 }
 
 .banner p {
@@ -1204,6 +1222,10 @@ section#faqs .content article.open p {
         padding: 1rem 0;
         background: rgba(0, 0, 0, 0.9);
         display: none;
+    }
+    
+    .blog-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .on {
