@@ -30,52 +30,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Anton&family=DM+Sans&family=Dancing+Script&family=EB+Garamond&family=Fenix&family=Inspiration&family=Lato:ital,wght@1,300&family=Lora&family=Montserrat&family=Open+Sans:wght@300&family=Oswald&family=Poppins&family=Quicksand:wght@300&family=Rajdhani&family=Raleway:wght@300&family=Roboto&family=Roboto+Condensed&family=Sarabun:wght@300&family=Unbounded:wght@500&family=Vollkorn&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src = "script.js"></script>
+    
     <div class="load"></div>
-    <div class = "nt-container">
-        <div class = "container">
-            <div class = "nav-top">
-                <div>
-                    <i class = "fa-solid fa-location-dot"></i>
-                    <span>San Jose, California</span>
-                </div>
-                <div>
-                    <i class = "fa-solid fa-clock"></i>
-                    <span>9AM - 5PM</span>
-                </div>
-                <div>
-                    <i class = "fa-solid fa-phone"></i>
-                    <span>(+1) 510 945 8683</span>
-                </div>
-                <div class="social-icons">
-                    <a href = "https://www.instagram.com/clharityofficial/" target = "_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href = "https://twitter.com/ClharityFunding" target= "_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href = "https://www.linkedin.com/company/clharity/" target = "_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <nav>
+        <div class = "nt-container">
+            <div class = "container">
+                <div class = "nav-top">
+                    <div>
+                        <i class = "fa-solid fa-location-dot"></i>
+                        <span>San Jose, California</span>
+                    </div>
+                    <div>
+                        <i class = "fa-solid fa-clock"></i>
+                        <span>9AM - 5PM</span>
+                    </div>
+                    <div>
+                        <i class = "fa-solid fa-phone"></i>
+                        <span>(+1) 510 945 8683</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href = "https://www.instagram.com/clharityofficial/" target = "_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href = "https://twitter.com/ClharityFunding" target= "_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href = "https://www.linkedin.com/company/clharity/" target = "_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class = "nl-container">
-        <div class = "container">
-            <div class = "logo">
-                <img src = "img/mini_clharitylogo_transparent4.png" alt = "logo">
-            </div>
-            <ul class = "navlist">
-                <li><a href = "#works">Process</a></li>
-                <li><a href = "#about-two">About Us</a></li>
-                <li><a href = "#team">Our Team</a></li>
-                <li><a href = "#donors">Donors</a></li>
-                <li><a href = "#charities">Charities</a></li>
-                <li><a href = "#features">Services</a></li>
-                <li><a href = "#blog">Blog</a></li>
-                <li><a href = "#faqs">FAQ</a></li>
-                <li><a href = "#contact">Contact</a></li>
-            </ul>
-            <div class = "menu-btn">
-                <i class = "fa-solid fa-bars"></i>
+        <div class = "nl-container">
+            <div class = "container">
+                <div class = "logo">
+                    <img src = "img/mini_clharitylogo_transparent4.png" alt = "logo">
+                </div>
+                <ul class = "navlist">
+                    <li><a href = "#works">Process</a></li>
+                    <li><a href = "#about-two">About</a></li>
+                    <li><a href = "#team">Team</a></li>
+                    <li><a href = "#donors">Donors</a></li>
+                    <li><a href = "#charities">Charities</a></li>
+                    <li><a href = "#features">Services</a></li>
+                    <li><a href = "#blog">Blog</a></li>
+                    <li><a href = "#faqs">FAQ</a></li>
+                    <li><a href = "#contact">Contact</a></li>
+                </ul>
+                <div class = "menu-btn">
+                    <i class = "fa-solid fa-bars"></i>
+                </div>
             </div>
         </div>
-    </div>
+    </nav>
     <section class="home" id="home">
         <div class="container home-container">
             <div class="home-content">
@@ -146,7 +148,7 @@
     <br>
     <section class="team" id="team">
         <div class="title">
-            <h2>Meet our team of <span>creators, designers, and problem-solvers</span></h2>
+            <h2>Meet Our Team</h2>
             <p>Different experiences, different skillsets, one mission.</p>
         </div>
         <div class="container arrival-container">
@@ -215,9 +217,6 @@
                     <li></span><span style = "color: gray">    We at Clharity hope that donors and charities can maintain the relationship they have established through communication and updates on the progress of the mission.</span></li>
                 </ul>
                 <br>
-                <!--
-                <button class = "btn">Learn More</button>
-                -->
             </div>
         </div>
     </section>
@@ -240,7 +239,6 @@
                     <li></span><span style = "color: gray">    Listing on our platform empowers charities with access to a global donor base, enhanced visbility to targeted donors, and numerous other services to help your charity grow, all at zero cost.</span></li>
                 </ul>
                 <br>
-                <button class = "btn">Learn More</button>
             </div>
         </div>
     </section>
@@ -433,42 +431,42 @@
                 <h2>Frequently Asked Questions (FAQ)</h2>
             </div>
             <div class="content">
-                <article>
+                <article class = "content-article-one">
                     <div class="icon">
                         <i class = "uil uil-plus"></i>
                     </div>
                     <div class="detail">
-                        <h4>What is our Mission?</h4>
-                        <p>Clharity aims to alleviate donor skepticism 
+                        <h4><span class = "q-span">Q. </span>What is our Mission?</h4>
+                        <p></span>Clharity aims to alleviate donor skepticism 
                             by empowering donors with insight into the tangible impact and genuine utilization of their contributions.</p>
                     </div>
                 </article>
-                <article>
+                <article class =  "content-article-two">
                     <div class="icon">
                         <i class = "uil uil-plus"></i>
                     </div>
                     <div class="detail">
-                        <h4>Why Donate Through Clharity?</h4>
+                        <h4><span class = "q-span">Q. </span> Donate Through Clharity?</h4>
                         <p>We take 0 transaction fee and authenticate your donation for the sole purpose of helping alleviate any suspicion of intent you may have regarding the spending of your contribution. All donations using Clharity are completely tax deductible and our comprehensive impact report provides 
                             proprietary statistics to better evaluate growth and efficiency in nonprofits.</p>
                     </div>
                 </article>
-                <article>
+                <article class = "content-article-two">
                     <div class="icon">
                         <i class = "uil uil-plus"></i>
                     </div>
                     <div class="detail">
-                        <h4>Why is Clharity a For-Profit Company?</h4>
+                        <h4><span class = "q-span">Q. </span>Why is Clharity a For-Profit Company?</h4>
                         <p>For us to start giving, we need a few investments! A nonprofit business structure doesn’t attract investors because it doesn’t 
                             provide any potential for a return on investment. Although Clharity is currently a C-corporation, because of our socially and environmentally beneficial goals, we hope to attain B-corporation certification.</p>
                     </div>
                 </article>
-                <article>
+                <article class = "content-article-one">
                     <div class="icon">
                         <i class = "uil uil-plus"></i>
                     </div>
                     <div class="detail">
-                        <h4>How does Clharity come up with its statistics?</h4>
+                        <h4><span class = "q-span">Q. </span>How does Clharity come up with its statistics?</h4>
                         <p>Clharity aims to alleviate donor skepticism 
                             by empowering donors with insight into the tangible impact and genuine utilization of their contributions.</p>
                     </div>
@@ -486,7 +484,7 @@
                     icon.className = 'uil uil-minus';
                 }
                 else {
-                    icon.className = 'uil uil-minus';  
+                    icon.className = 'uil uil-plus';  
                 }
             })
         })
@@ -497,13 +495,13 @@
             <div class="row" style = "margin-top: -5%">
                 <div class="col">
                     <div class="counter-box">
-                        <h2 class="counter" style = "color: darkblue">2,000,000</h2>
+                        <h2 class="counter" style = "color: darkblue">$2,000,000</h2>
                         <h4 style = "font-size: 1rem; color: goldenrod">Total Client Gross Receipts</h4>
                     </div>
                 </div>
                 <div class="col">
                     <div class="counter-box">
-                        <h2 class="counter" style = "color: darkblue">31,000</h2>
+                        <h2 class="counter" style = "color: darkblue">$31,000</h2>
                         <h4 style = "font-size: 1rem; color: goldenrod">Facilitated Contributions</h4>
                     </div>
                 </div>
@@ -607,13 +605,6 @@
             </ul>
         </div>
     </footer>
-    <script>
-        const menuBtn = document.querySelector('.fa-bars');
-        const navList = document.querySelector('.navlist');
-        menuBtn.onClick = function() {
-            menuBtn.classList.toggle('fa-xmark');
-            navList.classList.toggle('active');
-        }
-    </script>
+    <script src = "test.js"></script>
 </body>
 </html>
