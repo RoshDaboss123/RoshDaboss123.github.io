@@ -24,230 +24,170 @@
     <link href="img/favicon.ico" rel="icon">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <!--Imported Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Anton&family=DM+Sans&family=Dancing+Script&family=EB+Garamond&family=Fenix&family=Inspiration&family=Lato:ital,wght@1,300&family=Lora&family=Montserrat&family=Open+Sans:wght@300&family=Oswald&family=Poppins&family=Quicksand:wght@300&family=Rajdhani&family=Raleway:wght@300&family=Roboto&family=Roboto+Condensed&family=Sarabun:wght@300&family=Unbounded:wght@500&family=Vollkorn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!--
+    <style>
+        body { 
+            background-image: url("./images/bg-texture.png") 
+        }
+    </style>
+    -->
 </head>
 <body>
-    
     <div class="load"></div>
     <nav>
-        <div class = "nt-container">
-            <div class = "container">
-                <div class = "nav-top">
-                    <div>
-                        <i class = "fa-solid fa-location-dot"></i>
-                        <span>San Jose, California</span>
-                    </div>
-                    <div>
-                        <i class = "fa-solid fa-clock"></i>
-                        <span>9AM - 5PM</span>
-                    </div>
-                    <div>
-                        <i class = "fa-solid fa-phone"></i>
-                        <span>(+1) 510 945 8683</span>
-                    </div>
-                    <div class="social-icons">
-                        <a href = "https://www.instagram.com/clharityofficial/" target = "_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href = "https://twitter.com/ClharityFunding" target= "_blank"><i class="fa-brands fa-twitter"></i></a>
-                        <a href = "https://www.linkedin.com/company/clharity/" target = "_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div>
+        <div class="container nav__container">
+            <div class = "logo">
+                <img src = "img/mini_clharitylogo_transparent4.png" alt = "logo">
             </div>
-        </div>
-        <div class = "nl-container">
-            <div class = "container">
-                <div class = "logo">
-                    <img src = "img/mini_clharitylogo_transparent4.png" alt = "logo">
-                </div>
-                <ul class = "navlist">
-                    <li><a href = "#works">Process</a></li>
-                    <li><a href = "#about-two">About</a></li>
-                    <li><a href = "#team">Team</a></li>
-                    <li><a href = "#donors">Donors</a></li>
-                    <li><a href = "#charities">Charities</a></li>
-                    <li><a href = "#features">Services</a></li>
-                    <li><a href = "#blog">Blog</a></li>
-                    <li><a href = "#faqs">FAQ</a></li>
-                    <li><a href = "#contact">Contact</a></li>
-                </ul>
-                <div class = "menu-btn">
-                    <i class = "fa-solid fa-bars"></i>
-                </div>
-            </div>
+            <ul class="nav__menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Donor Report</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars" style = "color: #000"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply" style = "color: #000"></i></button>
         </div>
     </nav>
-    <section class="home" id="home">
-        <div class="container home-container">
-            <div class="home-content">
-                <h1>Bringing clarity<br> to charities</h1>
-                <hr style = "background: rgb(33, 179, 232); height: 1.5px; width: 50%;">
-                <p>Streamline and empower your giving program. Clarify the actions between donors and charities. Take comfort knowing that your donation will be well-spent.</p>
-                <button class="btn"><a href = "#demo-video">Get Started</a></button>
+    <header style>
+        <div class="container header__container">
+            <div class="header__left">
+                <h1 style = "text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);">Bringing clarity to charities</h1>
+                <p>
+                    Streamline and empower your giving program. <br>Clarify the actions between donors and charities.<br>Take comfort knowing that your donation will be well-spent.
+                </p>
+                <a href="courses.html" class="btn btn-primary" style = "text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);">Get Started</a>
+            </div>
+            <!--
+            <div class="header__right">
+                <div class="header__right-image">
+                    <img src="./img/father-son-quotes-1619064384.jpg">
+                </div>
+            </div>
+            -->
+        </div>
+    </header>
+    <div class = "nt-container">
+        <div class = "container">
+            <div class = "nav-top">
+                <div>
+                    <i class = "fa-solid fa-location-dot"></i>
+                    <span style = "color: white">San Jose, California</span>
+                </div>
+                <div>
+                    <i class = "fa-solid fa-clock"></i>
+                    <span style = "color: white">9AM - 5PM</span>
+                </div>
+                <div>
+                    <i class = "fa-solid fa-phone"></i>
+                    <span style = "color: white">(+1) 510 945 8683</span>
+                </div>
+                <div>
+                    <i class = "fa-solid fa-envelope"></i>
+                    <span style = "color: white">customerrelations@clharity.com</span>
+                </div>
             </div>
         </div>
-    </section>
-    <section class = "works" id = "#works">
-        <div class = "title">
-            <h2>How We Work</h2>
-            <p>Explore Clharity's gift giving process</p>
-        </div>
-        <div class = "container works-container">
-            <div class = "step">
-                <span class = "number"><span>01</span></span>
-                <span class = "caption">Contact Us</span>
-            </div>
-            <div class = "step">
-                <span class = "number"><span>02</span></span>
-                <span class = "caption">Partner with Us</span>
-            </div>
-            <div class = "step">
-                <span class = "number"><span>03</span></span>
-                <span class = "caption">Donate to Charity</span>
-            </div>
-            <div class = "step">
-                <span class = "number"><span>04</span></span>
-                <span class = "caption">Donation spent</span>
-            </div>
-            <div class = "step">
-                <span class = "number"><span>05</span></span>
-                <span class = "caption">Impact Report</span>
-            </div>
-        </div>
-    </section> 
+    </div>
     <section class="about-two" id="about-two">
-        <div class="title">
-            <h2>Our Story</h2>
-        </div>
-        <div class="container about-two-container">
+        <div class="new-container about-two-container">
             <div class="history">
-                <p>Clharity started as an idea to a business pitch competition. We pitched our idea to a team of industry professionals, winning first place in the competition.
+                <p style = "color: #000; font-size: 800;">Clharity started as an idea to a business pitch competition. We pitched our idea to a team of industry professionals, winning first place in the competition.
                 From then on, we knew that our value proposition was unique, and that we were tackling an issue that was previously unaddressed.
                 </p>
                 <br>
-                <p>As a result, we became determined to turn our business pitch idea into an actual company, aimed at alleviating donor
+                <p style = "color: #000; font-size: 800;">As a result, we became determined to turn our business pitch idea into an actual company, aimed at alleviating donor
                 skepticism in the charity world. As with all things, our initial startup wasn't easy. We lacked clients, and funding, and connections. We were forced to cold-email charities, pitching them our idea. We met with industry professionals, seeking feedback on our value proposition. 
                 </p><br>
                 <div class="history-container">
                     <div class="image">
                         <img src="./img/about-us.jpg" alt="">
                     </div>
-                    <p>Eventually, we began to recieve emails back from potential clients; some were positive, others simply waived off our idea, as they'd never heard of us. Desperate to build our name in the crowdfunding industry, we began developing our website, and simultaneously 
+                    <p style = "color: #000; font-size: 800;">Eventually, we began to recieve emails back from potential clients; some were positive, others simply waived off our idea, as they'd never heard of us. Desperate to build our name in the crowdfunding industry, we began developing our website, and simultaneously 
                     writing blogs to help improving our search engine optimization. In time, our name shot up to the top of search engine search results, allowing us to begin formally partnering with charities like Moving America Forward, 
                     Kids Against Hunger, and Pivotal. <br><br>We had also developed a model that was trained on millions of IRS 990 forms, that cohesively produced an accurate, holistic rating of any charity. 
-                    This algorithm, we believe, was really our main differentiator that allowed our business to stand out. 
-                    </p>
-                </div>
-                <p>Today, Clharity has facilitated over $30,000 in donations between high-level donors and well-known charities. Yet our journey has just begun; 
+                    This algorithm, we believe, was really our main differentiator that allowed our business to stand out.<br><br>Today, Clharity has facilitated over $30,000 in donations between high-level donors and well-known charities. Yet our journey has just begun; 
                     we hope to be one of the biggest-names in the crowdfunding industry in the future.
-                </p>
+                    </p>
+                </div>         
             </div>
         </div>
     </section>
-    <br>
-    <section class="team" id="team">
-        <div class="title">
-            <h2>Meet Our Team</h2>
-            <p>Different experiences, different skillsets, one mission.</p>
-        </div>
-        <div class="container arrival-container">
-            <div class="box">
-                <div class="image">
-                    <img src = "img/person.jpg" alt="">
-                    <span>CEO</span>
-                    <div class="goto">
-                        <a href = "" target = "_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href = "" target = "_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
+    <br><br>
+    <section class="team">
+        <h2 style = "color: #fff">Who We Are</h2>
+        <div class="container team__container">
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="img/person-removebg-preview.png">
                 </div>
-                <a href="">Roshan Amble</a>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src = "img/person.jpg" alt="">
-                    <span>CPO</span>
-                    <div class="goto">
-                        <a href = "" target = "_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href = "" target = "_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
+                <div class="team__member-info">
+                    <h4 style = "color: goldenrod; text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.4);">Roshan Amble</h4>
+                    <p style = "text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.9);">Chief Executive Officer</p>
                 </div>
-                <a href="">Nathan Wang</a>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src = "img/person.jpg" alt="">
-                    <span>CMO</span>
-                    <div class="goto">
-                        <a href = "" target = "_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href = "" target = "_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
+                <div class="team__member-socials">
+                    <a href="https://instagram.com"><i class="uil uil-instagram"></i></a>
+                    <a href="https://twitter.com"><i class="uil uil-twitter-alt"></i></a>
+                    <a href="https://linkedin.com"><i class="uil uil-linkedin-alt"></i></a>
                 </div>
-                <a href="">Maximus Wu</a>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="img/person.jpg" alt="">
-                    <span>COO</span>
-                    <div class="goto">
-                        <a href = "" target = "_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href = "" target = "_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
+            </article>  
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src= "img/person-removebg-preview.png">
                 </div>
-                <a href="">Alan Zhong</a>
-            </div>
-        </div>
-    </section>
-    <br>
-    <section class = "about" id = "about">
-        <div class = "main-container about-container">
-            <div class = "left">
-                <img src = "img/slide3.jpg">
-            </div>
-            <div class = "right" id = "donors">
-                <div class = "title">
-                    <h5>Donors</h5>
-                    <hr style = "background: goldenrod; height: 1.5px; width: 30%; margin: 0 auto;">
-                    <br>
+                <div class="team__member-info">
+                    <h4 style = "color: goldenrod; text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.4);">Nathan Wang</h4>
+                    <p style = "text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.9);">Chief Product Officer</p>
                 </div>
-                <p>Clharity carefully and holistically works with donors to ensure total transparency and trust between them and their charities.</p>
-                <br>
-                <ul class = "features-left">
-                    <li></span><span style = "color: gray">    Donors are provided with a comprehensive report detailing the authenticated effects of their contribution as soon as their donation has been spent.</span></li>
-                    <li></span><span style = "color: gray">    We at Clharity hope that donors and charities can maintain the relationship they have established through communication and updates on the progress of the mission.</span></li>
-                </ul>
-                <br>
-            </div>
+                <div class="team__member-socials">
+                    <a href="https://instagram.com"><i class="uil uil-instagram"></i></a>
+                    <a href="https://twitter.com"><i class="uil uil-twitter-alt"></i></a>
+                    <a href="https://linkedin.com"><i class="uil uil-linkedin-alt"></i></a>
+                </div>
+            </article>
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src= "img/person-removebg-preview.png">
+                </div>
+                <div class="team__member-info">
+                    <h4 style = "color: goldenrod; text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.4);">Max Wu</h4>
+                    <p style = "text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.9);">Chief Marketing Officer</p>
+                </div>
+                <div class="team__member-socials">
+                    <a href="https://instagram.com"><i class="uil uil-instagram"></i></a>
+                    <a href="https://twitter.com"><i class="uil uil-twitter-alt"></i></a>
+                    <a href="https://linkedin.com"><i class="uil uil-linkedin-alt"></i></a>
+                </div>
+            </article>
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="img/person-removebg-preview.png">
+                </div>
+                <div class="team__member-info">
+                    <h4 style = "color: goldenrod; text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.4);">Alan Zhong</h4>
+                    <p style = "text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.9);">Chief Operating Officer</p>
+                </div>
+                <div class="team__member-socials">
+                    <a href="https://instagram.com"><i class="uil uil-instagram"></i></a>
+                    <a href="https://twitter.com"><i class="uil uil-twitter-alt"></i></a>
+                    <a href="https://linkedin.com"><i class="uil uil-linkedin-alt"></i></a>
+                </div>
+            </article>
+            <br><br>
         </div>
     </section>
-    <br>
-    <section class = "about" id = "about">
-        <div class = "main-container about-container">
-            <div class = "left">
-                <img src = "img/slide2.jpg">
-            </div>
-            <div class = "right" id = "charities">
-                <div class = "title">
-                    <h5>Charities</h5>
-                    <hr style = "background: goldenrod; height: 1.5px; width: 30%; margin: 0 auto;">
-                    <br>
-                </div>
-                <p>Clharity, through its process of authentication and transparency, allows charities to experience spikes of donations, from the donors that we work with.</p>
-                <br>
-                <ul class = "features-left">
-                    <li></span><span style = "color: gray">    Charities reach an agreement about the best intended contributions that they recieve. Once the details have been established, our exclusive benefits are presented.</span></li>
-                    <li></span><span style = "color: gray">    Listing on our platform empowers charities with access to a global donor base, enhanced visbility to targeted donors, and numerous other services to help your charity grow, all at zero cost.</span></li>
-                </ul>
-                <br>
-            </div>
-        </div>
-    </section>
-
     <section class = "features" id = "features">
         <div class = "main-container features-container">
             <div class = "left">
                 <p style = "color: rgb(0, 145, 255)">Digital Services - Donor Report</p><br>
-                <blockquote>It's Clharity's belief that any donor should be able to look into the details of a nonprofit that they are interested in, to examine their efficacy and efficiency. With our personalized donor reports, which have been already requested by industry professionals, we remove any transparency blocking a charity's financial details.</blockquote><br>
+                <blockquote style = "font-weight: 550">It's Clharity's belief that any donor should be able to look into the details of a nonprofit that they are interested in, to examine their efficacy and efficiency. With our personalized donor reports, which have been already requested by industry professionals, we remove any transparency blocking a charity's financial details.</blockquote><br>
                 <blockquote>Using our <a href = "https://doi.org/10.4236/ojbm.2023.113064" target = "_blank" style = "color: rgb(0, 145, 255)">patented AI algorithm</a>, we assign any nonprofit an extremely accurate rating of its performance as an NGO.</blockquote><br>
                 <div class = "author">
                     <div class = "box">
@@ -276,7 +216,21 @@
                             They dive into statistics that we usually don't even consider. Overall very holistic, and I recommend them to 
                             any donor who's unsure of a charity."</p>
                     </div>
-                </div>
+                </div><br>
+                <div class = "author">
+                    <div class = "box">
+                        <img src = "img/user-icon-person-icon-client-symbol-profile-icon-vector.webp">
+                        <div>
+                            <h5>Brian Henderson</h5>
+                            <p style = "color: goldenrod">High-level Donor</p>
+                        </div>
+                    </div>
+                    <div class = "box">
+                        <p>- "I've been meaning to donate to the Pivotal charity for a while.
+                            However, I've been a little skeptical of its authenticity, so I'm quite grateful for Clharity's donor report. 
+                            As their name suggests, they truly brought clarity to this charity."</p>
+                    </div>
+                </div><br>
             </div>
             <div class = "right" style = "width: 100%; height: 100%;">
                 <div class = "image">
@@ -287,238 +241,239 @@
             </div>
         </div>
     </section>
-    <section class = "services" id = "services">
-        <div class = "title">
-            <h2>Other Services We Offer</h2>
-            <p>It's of the utmost importance for all donors to make informed and educated decisions when deciding which charities to donate to. At Clharity, 
-                we prefer multiple services to help simplify that process.
-            </p>
+    <section class="categories">
+        <div class="container categories__container">
+            <div class="categories__left">
+                <h1 style = "color: goldenrod; text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);">Other Services We Provide</h1>
+                <p style = "color: #fff">
+                    It's of the utmost importance for all donors to make informed and educated decisions when deciding which charities to donate to. At Clharity, we provide multiple services to help simplify that process.
+                </p>
+            </div>
+            <div class="categories__right">
+                <article class="category">
+                    <span class="category__icon">
+                        <span class = "lnr lnr-magnifier" style = "color: #fff"></span>
+                    </span>
+                    <h5 style = "color: goldenrod; font-size: 1rem;">Charity Auditing</h5>
+                    <p style = "color: #fff">Clharity examines the financial records and operations of any NGO to ensure transparency and accountability.</p>
+                </article>
+  
+                <article class="category">
+                    <span class="category__icon">
+                        <span class = "lnr lnr-laptop" style = "color: #fff"></span>
+                    </span>
+                    <h5 style = "color: goldenrod; font-size: 1rem;">Published AI Model</h5>
+                    <p style = "color: #fff">Our <span><a href = "https://www.scirp.org/journal/paperinformation.aspx?paperid=125083" target = "_blank" style = "color: goldenrod">AI model</a></span>, trained on millions of IRS 990 forms, instantly provides a holistically accurate rating of any nonprofit.
+                    </p> 
+                </article>
+                <article class="category">
+                <span class="category__icon">
+                    <span class = "lnr lnr-cloud-download" style = "color: #fff"></span>
+                </span>
+                <h5 style = "color: goldenrod; font-size: 1rem;">Donor Portfolio</h5>
+                <p style = "color: #fff">Clharity provides to each donor a downloadable donor portfolio, that records every charity they've donated to and the 
+                    corresponding donation amounts. </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="courses" style = "margin-top: -10px">
+        <h2 style = "text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);">Most Recent Posts</h2>
+        <div class="container courses__container">
+            <article class="course">
+                <div class="course__image">
+                    <img src="img/blog-img-1.png">
+                </div>
+                <div class="course__info">
+                    <h3>Informative - Posted by <span style = "color: rgb(0, 145, 255)">Roshan Amble</span></h3>
+                    <h4><a href = "#" target = "_blank">Donor Suspicion - Read More</h4>
+                    <p style = "color: #fff">
+                        We ask questions like “How's my donation being spent?”, “Is my donation going to truly help people?” So, instead of sitting around, let's extinguish our concerns!
+                    </p>
+                    <a href="course.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course">
+                <div class="course__image">
+                    <img src="img/blog-img-2.png">
+                </div>
+                <div class="course__info">
+                    <h3>Informative - Posted by <span style = "color: rgb(0, 145, 255)">Alan Zhong</span></h3>
+                    <h4 style = "color: goldenrod">Tax Deductible Donations - Read More</h4>
+                    <p style = "color: #fff">
+                        Claiming a tax deduction for charitable donations can be confusing for many people. We explain how the tax deductibility process works when donating to charities.
+                    </p>
+                    <a href="course.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course">
+                <div class="course__image">
+                    <img src="img/blog-img-3.jpg">
+                </div>
+                <div class="course__info">
+                    <h3>Informative - Posted by <span style = "color: rgb(0, 145, 255)">Max Wu</span></h3>
+                    <h4 style = "color: goldenrod">Charity Research Tools - Learn More</h4>
+                    <p style = "color: #fff">
+                        Charity Research Tools play a crucial role in informing both new and recurring donors regarding the effectiveness of their favorite charities. 
+                    </p>
+                    <a href="course.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <br><br><br>
+    <section class="faqs">
+        <h2 style = "color: #fff; text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);">Frequently Asked Questions</h2>
+        <div class="container faqs__container">
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus" style = "color: #fff"></i></div>
+                <div class="question__answer">
+                    <h4 style = "color: #fff">What is our mission?</h4>
+                    <p style = "color: #fff">
+                        Clharity aims to alleviate donor skepticism by empowering donors with insight into the tangible impact and genuine utilization of their contributions.
+                    </p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus" style = "color: #fff"></i></div>
+                <div class="question__answer">
+                    <h4 style = "color: #fff">Why Donate Through Clharity?</h4>
+                    <p style = "color: #fff">
+                        Clharity is FREE! We take no transaction fee and authenticate your donation for the sole purpose of helping alleviate any suspicion of intent you may have regarding the spending of your contribution. All donations using Clharity are completely tax deductible and our comprehensive impact report provides proprietary statistics to better evaluate growth and efficiency in nonprofits
+                    </p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus" style = "color: #fff"></i></div>
+                <div class="question__answer">
+                    <h4 style = "color: #fff">Why is Clharity a For-Profit Company?</h4>
+                    <p style = "color: #fff">
+                        At Clharity, we love to believe that the more you give, the more you get, but for us to start giving, we need a few investments! A nonprofit business structure doesn’t attract investors because it doesn’t provide any potential for a return on investment. Although Clharity is currently a C-corporation, because of our socially and environmentally beneficial goals, we hope to attain B-corporation certification.
+                    </p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus" style = "color: #fff"></i></div>
+                <div class="question__answer" style = "color: #fff">
+                    <h4 style = "color: #fff">How does Clharity come up with its statistics?</h4>                    </h4>
+                    <p style = "color: #fff">
+                        Clharity utilizes our <span><a href = "https://www.scirp.org/journal/paperinformation.aspx?paperid=125083" target = "_blank" style = "color: goldenrod">published algorithm</a></span> along with individual nonprofit comparisons through evaluations of IRS 990 form data, public customer reviews, and third-party evidence on nonprofit impact. Once a donation has been transacted, we work directly with the nonprofit recipient to ascertain the exact usage of your funds. From the data collected from each of these methods, Clharity is able to formulate an accurate reflection of the nonprofit’s efficiency and predicted growth. 
+                    </p>
+                </div>
+            </article>    
             <br><br>
         </div>
-        <div class = "container services-container">
-            <div class = "card">
-                <div>
-                    <span class = "lnr lnr-magnifier" style = "color: goldenrod"></span>
-                    <h4>Charity Auditing</h4>
-                </div>
-                <p>Clharity examines the financial records and operations of any NGO to ensure transparency and accountability. We provide 
-                    assurance to stakeholders that the organization is utilizing its resources efficiently and effectively.
-                </p>
-            </div>
-            <div class = "card">
-                <div>
-                    <span class = "lnr lnr-laptop" style = "color: goldenrod"></span>
-                    <h4>Published AI Model</h4>
-                </div>
-                <p>Our AI model, trained on millions of IRS 990 forms, instantly provides a holistically accurate rating of any nonprofit. Just request any 
-                    charity to be rated. Read more about our model <a href = "https://doi.org/10.4236/ojbm.2023.113064" target = "_blank" style = "color: rgb(33, 179, 232)">here</a>.
-                </p>
-            </div>
-            <div class = "card">
-                <div>
-                    <span class = "lnr lnr-cloud-download" style = "color: goldenrod"></span>
-                    <h4>Donor Portfolio</h4>
-                </div>
-                <p>Clharity provides to each donor a downloadable donor portfolio, that records every charity they've donated to and the 
-                    corresponding donation amounts. 
-                </p>
-            </div>
-        </div> 
     </section>
-    <br><br><br>    
-    <div class = "bg-show" id = "demo-video">
-        <div class = "link">
-            <a href = "#" class = "link_a">Play Video</a>
-        </div>
-        <div class = "overlay">
-            <div class = "image">
-                <img src = "img/pngtree-white-cancel-button-icon-image_1338668-removebg-preview.png" alt = "" class = "cancel">
-                <video src = "" id = "video"></video>
-                <div class = "bg-player">
-                    <img class = "player" src = "img/0-4474_facebook-play-button-png-clip-art-white-video-removebg-preview.png" alt = "">
+    <section class="container testimonials__container mySwiper">
+        <h2>Client's Testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar1.jpg">
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function myVideo() {
-            let links = document.querySelector('.link_a');
-            let showoverlay = document.querySelector(".bg-show .overlay");
-            let cancel = document.querySelector(".cancel");
-            let player = document.querySelector(".player");
-            let videos = document.querySelector("video");
-            links.onclick = (ed) => {
-                ed.preventDefault();
-                showoverlay.style.display = "block";
-            }
-            cancel.onclick = () => {
-                showoverlay.style.display = "none";
-            }
-            player.onclick = () => {
-                if (videos.paused) {
-                    videos.play();
-                    player.src = "img/294-2944357_play-video-icon-pause-video-icon-pause-button-removebg-preview.png"
-                }
-                else {
-                    videos.pause();
-                    player.src = "img/0-4474_facebook-play-button-png-clip-art-white-video-removebg-preview.png"
-                }
-            }
-        }
-        myVideo();
-    </script>
-    <section class = "blog" id = "blog">
-        <div class= "title">
-            <h2>Most Recent Posts</h2>
-        </div>
-        <div class = "container blog-container">
-            <div class="card">
-                <div class="image">
-                    <img src = "img/blog-img-1.png" alt = "">
-                    <div class="tag">
-                        <span>24</span>
-                        <p>Jan</p>
+                <div class="testimonial__info">
+                    <h5>Diana Ayi</h5>
+                    <small>Lorem Ipsum</small>
+                </div>
+                  <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi corporis officiis sint dolore amet voluptatibus perspiciatis animi facere? Sed, rerum. Rem eveniet aut illo!
+                    </p>
+                </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar2.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Ernest Achiever</h5>
+                    <small>Lorem Ipsum</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi corporis officiis sint dolore amet voluptatibus perspiciatis animi facere? Sed, rerum. Rem eveniet aut illo!
+                    </p>
+                </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar3.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Edem Quist</h5>
+                    <small>Lorem Ipsum</small>
+                  </div>
+                  <div class="testimonial__body">
+                      <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi corporis officiis sint dolore amet voluptatibus perspiciatis animi facere? Sed, rerum. Rem eveniet aut illo!
+                      </p>
+                  </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar4.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Hajia Bintu</h5>
+                    <small>Lorem Ipsum</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi corporis officiis sint dolore amet voluptatibus perspiciatis animi facere? Sed, rerum. Rem eveniet aut illo!
+                    </p>
+                </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./images/avatar5.jpg">
                     </div>
-                </div>
-                <div class="info">
-                    <h6>INFORMATIVE</h6>
-                    <h4><a href = "#">Donor Suspicion - Read More</a></h4>
-                    <h5>Posted by: <span>Roshan Amble</span></h5>
-                    <p>We ask questions like “How's my donation being spent?”, “Is my donation going to truly help people?” 
-                        So, instead of sitting around, let's extinguish our concerns!</p><br>
-                </div>
-            </div>
-            <div class="card">
-                <div class="image">
-                    <img src = "img/blog-img-2.png" alt = "">
-                    <div class="tag">
-                        <span>23</span>
-                        <p>Jan</p>
+                    <div class="testimonial__info">
+                        <h5>Jane Doe</h5>
+                        <small>Student</small>
                     </div>
-                </div>
-                <div class="info">
-                    <h6>INFORMATIVE</h6>
-                    <h4><a href = "#">Tax Deductible Donations - Read More</a></h4>
-                    <h5>Posted by: <span>Alan Zhong</span></h5>
-                    <p>The process of claiming a tax deduction for charitable donations can be confusing 
-                        for many people. We explain how the tax deductibility process works when donating to charities.</p><br>
-                </div>
-            </div>
-            <div class="card">
-                <div class="image">
-                    <img src = "img/blog-img-3.jpg" alt = "">
-                    <div class="tag">
-                        <span>29</span>
-                        <p>Jan</p>
+                    <div class="testimonial__body">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi corporis officiis sint dolore amet voluptatibus perspiciatis animi facere? Sed, rerum. Rem eveniet aut illo!
+                        </p>
                     </div>
-                </div>
-                <div class="info">
-                    <h6>INFORMATIVE</h6>
-                    <h4><a href = "">Charity Research Tools - Read More</a></h4>
-                    <h5>Posted by: <span>Max Wu</span></h5>
-                    <p>Charity Research Tools play a crucial role in informing both new and recurring donors regarding the effectiveness of their favorite charities. 
-                        But it can be difficult to research each one individually.
-                    </p><br>
-                </div>
-            </div>
-        </div>
+                </article>
+          </div>
+        <div class="swiper-pagination"></div>
     </section>
-    <br><br>
-    <section id = "faqs">
-        <div class="container">
-            <div class="title">
-                <h2>Frequently Asked Questions (FAQ)</h2>
+    <section class="about__achievements" style = "background-color: #f4f2f0;">
+        <div class="container about__achievements-container">
+            <div class="about__achievements-left">
+                <img src="img/achievements.webp">
             </div>
-            <div class="content">
-                <article class = "content-article-one">
-                    <div class="icon">
-                        <i class = "uil uil-plus"></i>
-                    </div>
-                    <div class="detail">
-                        <h4><span class = "q-span">Q. </span>What is our Mission?</h4>
-                        <p></span>Clharity aims to alleviate donor skepticism 
-                            by empowering donors with insight into the tangible impact and genuine utilization of their contributions.</p>
-                    </div>
-                </article>
-                <article class =  "content-article-two">
-                    <div class="icon">
-                        <i class = "uil uil-plus"></i>
-                    </div>
-                    <div class="detail">
-                        <h4><span class = "q-span">Q. </span> Donate Through Clharity?</h4>
-                        <p>We take 0 transaction fee and authenticate your donation for the sole purpose of helping alleviate any suspicion of intent you may have regarding the spending of your contribution. All donations using Clharity are completely tax deductible and our comprehensive impact report provides 
-                            proprietary statistics to better evaluate growth and efficiency in nonprofits.</p>
-                    </div>
-                </article>
-                <article class = "content-article-two">
-                    <div class="icon">
-                        <i class = "uil uil-plus"></i>
-                    </div>
-                    <div class="detail">
-                        <h4><span class = "q-span">Q. </span>Why is Clharity a For-Profit Company?</h4>
-                        <p>For us to start giving, we need a few investments! A nonprofit business structure doesn’t attract investors because it doesn’t 
-                            provide any potential for a return on investment. Although Clharity is currently a C-corporation, because of our socially and environmentally beneficial goals, we hope to attain B-corporation certification.</p>
-                    </div>
-                </article>
-                <article class = "content-article-one">
-                    <div class="icon">
-                        <i class = "uil uil-plus"></i>
-                    </div>
-                    <div class="detail">
-                        <h4><span class = "q-span">Q. </span>How does Clharity come up with its statistics?</h4>
-                        <p>Clharity aims to alleviate donor skepticism 
-                            by empowering donors with insight into the tangible impact and genuine utilization of their contributions.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-    <script>
-        const faqs = document.querySelectorAll('section#faqs article')
-        faqs.forEach(faq => {
-            faq.addEventListener('click', () => {
-                faq.classList.toggle('open');
-                const icon = faq.querySelector('icon');
-                if (icon.className == 'uil uil-plus') {
-                    icon.className = 'uil uil-minus';
-                }
-                else {
-                    icon.className = 'uil uil-plus';  
-                }
-            })
-        })
-    </script>
-    <br><br><br><br>
-    <section class = "banner" id = "banner">
-        <div class="hero">
-            <div class="row" style = "margin-top: -5%">
-                <div class="col">
-                    <div class="counter-box">
-                        <h2 class="counter" style = "color: darkblue">$2,000,000</h2>
-                        <h4 style = "font-size: 1rem; color: goldenrod">Total Client Gross Receipts</h4>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="counter-box">
-                        <h2 class="counter" style = "color: darkblue">$31,000</h2>
-                        <h4 style = "font-size: 1rem; color: goldenrod">Facilitated Contributions</h4>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="counter-box">
-                        <h2 class="counter" style = "color: darkblue">20+</h2>
-                        <h4 style = "font-size: 1rem; color: goldenrod">Charities Partnered</h4>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="counter-box">
-                        <h2 class="counter" style = "color: darkblue">10+</h2>
-                        <h4 style = "font-size: 1rem; color: goldenrod">Reports Sent</h4>
-                    </div>
+            <div class="about__achievements-right">
+                <h1>Achievements</h1>
+                <br><br>
+                <div class="achievements__cards">
+                    <article class="achievement__card">
+                        <span class="achievement__icon">
+                            <i class="uil uil-video"></i>
+                        </span>
+                        <h3>$10,500,000</h3>
+                        <p>Total Client Gross Receipts</p>
+                    </article>
+                    <article class="achievement__card">
+                        <span class="achievement__icon">
+                            <i class="uil uil-users-alt"></i>
+                        </span>
+                        <h3>$31,000</h3>
+                        <p>Faciliated Donations</p>
+                    </article>
+                    <article class="achievement__card">
+                        <span class="achievement__icon">
+                            <i class="uil uil-trophy"></i>
+                        </span>
+                        <h3>20+</h3>
+                        <p>Charities Partnered</p>
+                    </article>
                 </div>
             </div>
         </div>
+        <br><br>
     </section>
     <section class="contact" id="contact">
         <div class="title">
@@ -560,7 +515,7 @@
                     </div>
                     <input type="email" name="Email Address" placeholder="Email Address:" required>
                     <textarea name="Message"  rows="7" placeholder="Message:" required></textarea>
-                    <button type="submit" class="btn">Submit</button>
+                    <button type="submit" class="btn" style = "background-color: rgb(0, 145, 255); color: #fff">Submit</button>
                 </form>
             </div>
         </div>
@@ -572,39 +527,63 @@
         <div class="calendly-inline-widget" data-url="https://calendly.com/clharity/15min" style="min-width:320px;height:700px;"></div>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
     </section>
-    <br><br><br>
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="box">
-                <h4 style = "color:rgb(0, 145, 255)">About Clharity</h4>
-                <p style = "color: #fff">We are a company that works to unite donors and charities to increasing transparency between them.</p>
+    <br><br>
+
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer__logo"><h4 style = "color: rgb(0, 145, 255)">Clharity</h4></a>
+                <p style = "color: #fff">
+                    We are a company that works to unite donors and charities to increasing transparency between them.
+                </p>
                 <div class="social-icons">
-                    <a href = "https://www.instagram.com/clharityofficial/" target = "_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href = "https://twitter.com/ClharityFunding" target= "_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href = "https://www.linkedin.com/company/clharity/" target = "_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href = "https://www.instagram.com/clharityofficial/" target = "_blank"><i class="fa-brands fa-instagram" style = "color: #fff"></i></a>
+                    <a href = "https://twitter.com/ClharityFunding" target= "_blank"><i class="fa-brands fa-twitter" style = "color: #fff"></i></a>
+                    <a href = "https://www.linkedin.com/company/clharity/" target = "_blank"><i class="fa-brands fa-linkedin" style = "color: #fff"></i></a>
                 </div>
             </div>
-            <ul class="box">
-                <h4 style = "color:goldenrod">Resources</h4>
-                <li><a href = "#about-two" style = "color:#fff">About Us</a></li>
-                <li><a href = "#works" style = "color:#fff">Process</a></li>
-                <li><a href = "#features" style = "color: #fff">Services</a></li>
-            </ul>
-            <ul class="box">
+            <div class="footer__2">
+                <h4 style = "color: goldenrod">Resources</h4>
+                <ul class="permalinks">
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__3">
                 <h4 style = "color: rgb(0, 145, 255)">Other</h4>
-                <li><a href= "#team" style = "color: #fff">Our Team</a></li>
-                <li><a href = "#blog" style = "color:#fff">Blog</a></li>
-                <li><a href= "#demovideo" style = "color: #fff">Demo</a></li>
-                <li><a href= "#faqs" style = "color: #fff">FAQ</a></li>
-            </ul>
-            <ul class="box">
-                <h4 style = "color: goldenrod">Contact Information</h4>
-                <p style = "color: #fff">9AM - 5PM, Monday - Saturday</p>
-                <a style = "color: #fff">(+1) 510 945 8683</a>
-                <a style = "color: #fff">customerrelations@clharity.com</a>
-            </ul>
+                <ul class="privacy">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__4">
+                <h4 style = "color: goldenrod">Contact Us</h4>
+                <div>
+                    <p style = "color: #fff">(+1) 510 945 8683</p>
+                    <p style = "color: #fff">customerrelations@clharity.com</p>
+                    <p style = "color: #fff">We look forward to your response!</p>
+                </div>
+            </div>
         </div>
     </footer>
-    <script src = "test.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
 </body>
 </html>
