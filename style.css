@@ -171,7 +171,7 @@ img {
 }
 
 .nt-container {
-    background-image: linear-gradient(to bottom, #0000FF, #0808f0);
+    background-image: linear-gradient(to bottom, #6565ff, #3b3bf0);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -210,7 +210,7 @@ img {
 nav {
     background: #fff;
     width: 100vw;
-    height: 10rem;
+    height: 8rem;
     position: fixed;
     top: 0;
     z-index: 11;
@@ -304,7 +304,7 @@ header::before {
 
 .header__left {
     padding: 10px 10px;
-    background-color: rgba(61, 31, 231, 0.6);
+    background-color: rgba(31, 121, 231, 0.6);
 }
 
 .header__left h1 {
@@ -348,7 +348,7 @@ header::before {
 .categories__left {
     margin-right: 4rem;
     padding: 10px 20px;
-   
+    background-color: rgba(55, 177, 230, 0.3);
 }
 
 .categories__left p {
@@ -1159,6 +1159,10 @@ footer ul li a:hover {
 }
 
 @media(max-width: 824px) {
+    .nt-container {
+        display: none;
+    }
+
     .header__left h1 {
         width: 100%;
         color: #fff;
