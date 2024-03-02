@@ -1,0 +1,123 @@
+.blog-home {
+        width: 100%;
+        min-height: 440px;
+        background-image: url('./assets/images/journalism.avif');
+        height: 100%;   
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+}
+
+.blog-home-text {
+        color: white;
+        text-align: center;
+}
+
+.blog-home-title {
+        font-size: 5rem;
+        margin-bottom: 50px;
+        margin-top: 40px;
+}
+
+.blog-home-subtitle {
+        font-size: 2rem;
+        font-weight: 400;
+}
+
+.blog-post-filter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1.5rem;
+        margin-top: 2rem !important;
+}
+
+.blog-filter-item {
+        font-size: 1.5rem;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 10px;
+}
+
+.blog-active-filter {
+        background: goldenrod;
+        color: white;
+        padding: 4px 10px;
+
+}
+
+.blog-post {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+        justify-content: center;
+        gap: 1.5rem;
+}
+
+.blog-post-box {
+        background: var(rgb(0, 74, 139));
+        box-shadow: 0 4px 14px hsla(0, 10%, 12%, 0.1);
+        padding: 15px;
+        border-radius: 3rem;
+        width: 500px;
+}
+
+.blog-post-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0.5rem;
+}
+
+.blog-category {
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: goldenrod;
+}
+
+.blog-post-title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: darkblue;
+        display: -webkit-box;
+        -webkit-box-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+}
+
+.blog-post-date {
+        display: flex;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-top: 4px;
+}
+
+.blog-post-description {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin: 5px 0 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+}
+
+.blog-profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+}
+
+.blog-profile-img {
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+        object-position: cover;
+        border-radius: 50%;
+        border: 2px solid black;
+}
