@@ -835,6 +835,11 @@ body.nav-active { overflow: hidden; }
 
 .service .card-title { margin-block-end: 12px; }
 
+.service .card-content h3:hover {
+        color: blue;
+        transition: 0.5s ease;
+}
+
 .about .section-text { margin-block: 15px 30px; }
 
 .about .btn {
