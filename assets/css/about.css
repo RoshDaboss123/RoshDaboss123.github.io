@@ -2,14 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2023 codewithsadee
- */
-
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -377,12 +369,6 @@
   
   
   
-    /**
-     * HEADER
-     */
-  
-    .header .container { max-width: unset; }
-  
   }
   
   
@@ -440,19 +426,6 @@
     }
   
     .btn-secondary:is(:hover, :focus-visible) { background-color: var(--bg-blue-jeans);  }
-  
-  
-  
-    /**
-     * HEADER
-     */
-  
-    .header .btn {
-      display: grid;
-      margin-inline: auto 30px;
-    }
-  
-  
   
     /**
      * HERO
