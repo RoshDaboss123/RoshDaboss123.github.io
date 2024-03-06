@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+        <style>
+                body {
+                        font-family: 'DM Sans';
+                        background-color: rgba(234, 234, 234, 0.5);
+                        margin: 0;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                }
+                .container {
+                        display: flex;
+                        width: 80%; /* Adjusted for overall container width */
+                        max-width: 1200px; /* Optional max width for larger screens */
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                        border-radius: 10px;
+                        overflow: hidden;
+                }
+
+                .info-section {
+                        flex: 1; /* Takes up half of the container */
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 20px;
+                        background-color: #1e1ec2; /* Or any other color you prefer */
+                }
+
+                .info-image {
+                        max-width: 100%;
+                        height: auto;
+                        border-radius: 5px;
+                }
+
+                .info-text {
+                        color: white; /* If the background is dark, otherwise choose a darker color for text */
+                        text-align: center;
+                }
+                .info-text h2 {
+                        margin: 20px 0;
+                }
+
+                .info-text p {
+                        font-size: 16px;
+                }
+
+                .donation-form {
+                        flex: 1; /* Takes up the other half of the container */
+                        background-color: #FFF;
+                        padding: 20px;
+                        display: flex;
+                        width: 40%;
+                        flex-direction: column;
+                        justify-content: center;
+                        /* Rest of your donation form styles */
+                        border-radius: 10px;
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                        overflow: hidden;
+                        font-size: 16px;
+                }
+
+                .form-header {
+                        background-color: #1e1ec2;
+                        color: #fff;
+                        padding: 20px;
+                        text-align: center;
+                }
+
+                .form-title {
+                        margin: 0 0 20px 0;
+                }
+
+                .donation-types {
+                        display: flex;
+                        justify-content: center;
+                        gap: 10px;
+                        margin-bottom: 20px;
+                }
+
+                .donation-type {
+                        border: none;
+                        background: none;
+                        color: white;
+                        padding: 10px 20px;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        transition: background-color 0.3s;
+                }
+
+                .donation-type.active {
+                        background-color: #006f9e;
+                }
+
+                .amount-selection {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        padding: 20px;
+                }
+
+                .amount, .custom-amount {
+                        flex-basis: calc(33.333% - 14px);
+                        margin-bottom: 20px;
+                }
+
+                .amount {
+                        background-color: #f2f2f2;
+                        border: none;
+                        padding: 20px;
+                        text-align: center;
+                        cursor: pointer;
+                        transition: background-color 0.3s;
+                }
+
+                .amount.selected {
+                        background-color: #006f9e;
+                        color: white;
+                }
+
+                .custom-amount input {
+                        width: 100%;
+                        padding: 20px;
+                        border: 2px solid #ccc;
+                        border-radius: 4px;
+                }
+
+                .additional-options {
+                        padding: 0 20px 20px 20px;
+                }
+
+                .checkbox-container {
+                        display: block;
+                        position: relative;
+                        padding-left: 35px;
+                        margin-bottom: 20px;
+                        cursor: pointer;
+                        font-size: 16px;
+                        user-select: none;
+                }
+
+                .checkbox-container input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                }
+
+                .checkmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 25px;
+                        width: 25px;
+                        background-color: #eee;
+                        border-radius: 4px;
+                }
+
+                .checkbox-container:hover input ~ .checkmark {
+                        background-color: #ccc;
+                }
+
+                .checkbox-container input:checked ~ .checkmark {
+                        background-color: #2196F3;
+                }
+
+                .checkmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                }
+
+                .checkbox-container input:checked ~ .checkmark:after {
+                        display: block;
+                }
+
+                .checkbox-container .checkmark:after {
+                        left: 9px;
+                        top: 5px;
+                        width: 7px;
+                        height: 13px;
+                        border: solid white;
+                        border-width: 0 3px 3px 0;
+                        transform: rotate(45deg);
+                }
+
+                .personal-details {
+                        display: flex; /* Use flexbox for the container */
+                        flex-direction: column; /* Stack the children vertically */
+                }
+
+                .personal-details .form-field {
+                        margin-bottom: 15px;
+                }
+
+                .personal-details .form-field label {
+                        display: block;
+                        margin-bottom: 5px;
+                }
+
+                .personal-details .form-field input {
+                        width: 30%;
+                        padding: 30px;
+                        border-radius: 4px;
+                        border: 1px solid #ccc;
+                        align-items: center;
+                }
+
+                .brigade-selection-label, .brigade-selection {
+                        width: 100%;
+                        display: block;
+                        margin-bottom: 20px;
+                }
+
+                .brigade-selection {
+                        padding: 10px;
+                        border-radius: 4px;
+                        border: 2px solid #ccc;
+                }
+
+                .form-footer {
+                        background-color: #f0f0f0;
+                        padding: 20px;
+                        text-align: center;
+                }
+
+                .next-button {
+                        background-color: #006f9e;
+                        color: white;
+                        border: none;
+                        padding: 15px 30px;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        transition: background-color 0.3s;
+                }
+
+                .next-button:hover {
+                        background-color: #005f80;
+                }
+                .powered-by {
+                        margin-top: 15px;
+                        color: #888;
+                        font-size: 0.85em;
+                }
+
+        </style>
+        <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                        var firstName = document.getElementById('firstName');
+                        var lastName = document.getElementById('lastName');
+                        var email = document.getElementById('email');
+                        var phone = document.getElementById('phone');
+
+                        // Example: Log the values of the fields on form submission
+                        var nextButton = document.querySelector('.next-button');
+                        nextButton.addEventListener('click', function(event) {
+                                console.log('First Name:', firstName.value);
+                                console.log('Last Name:', lastName.value);
+                                console.log('Email:', email.value);
+                                console.log('Phone:', phone.value);
+                        });
+                });
+
+                document.addEventListener('DOMContentLoaded', function() {
+                        var amounts = document.querySelectorAll('.amount');
+                        var customAmountInput = document.getElementById('customAmount');
+                        amounts.forEach(function(button) {
+                                button.addEventListener('click', function() {
+                                amounts.forEach(btn => btn.classList.remove('selected'));
+                                this.classList.add('selected');
+                                customAmountInput.value = this.textContent;
+                                });
+                        });
+                        var donationTypes = document.querySelectorAll('.donation-type');
+                        donationTypes.forEach(function(button) {
+                                button.addEventListener('click', function() {
+                                donationTypes.forEach(btn => btn.classList.remove('active'));
+                                this.classList.add('active');
+                                });
+                        });
+                        });
+        </script>
+        <h1 style = "text-align: center;">Your donation makes a difference</h1>
+        <h2 style = "color: gray; text-align: center;">Help us reach more nonprofits by giving today.</h2>
+        <div class="container" style = "margin: 0 auto">
+                <div class="info-section">
+                        <img src="assets/images/donation.avif" alt="Why donating is important" class="info-image">
+                        <div class="info-text">
+                                <h2 style = "font-family: 'DM Sans';">Why Your Donation Matters</h2>
+                                <p style = "font-family: 'DM Sans';">Your contribution helps us provide essential services to those in need. Together, we can make a difference.</p>
+                        </div>
+                </div>
+                <div class="donation-form">
+                        <header class="form-header">
+                                <h2 class="form-title">Choose amount</h2>
+                        </header>
+                        <div class="amount-selection">
+                                <button type="button" class="amount">$25</button>
+                                <button type="button" class="amount">$50</button>
+                                <button type="button" class="amount">$100</button>
+                                <button type="button" class="amount selected">$250</button>
+                                <button type="button" class="amount">$500</button>
+                                <button type="button" class="amount">$1,000</button>
+                                <div class="custom-amount">
+                                        <label for="customAmount" class="sr-only" style = "color: goldenrod">Custom Amount</label>
+                                        <input type="text" id="customAmount" placeholder="Custom Amount">
+                                        <br><br>
+                                        <label for="customAmount" class="sr-only" style = "color: goldenrod">First Name</label>
+                                        <input type="text" id="customAmount" placeholder="First Name">
+                                        <br><br>
+                                        <label for="customAmount" class="sr-only" style = "color: goldenrod">Last Name</label>
+                                        <input type="text" id="customAmount" placeholder="Last Name">
+                                        <br><br>
+                                        <label for="customAmount" class="sr-only" style = "color: goldenrod">Email Address</label>
+                                        <input type="text" id="customAmount" placeholder="Email Address">
+                                        <label for="customAmount" class="sr-only" style = "color: goldenrod">Phone Number</label>
+                                        <input type="text" id="customAmount" placeholder="Phone Number">
+                                </div>
+                        </div>
+                        <footer class="form-footer">
+                                <button type="button" class="next-button">Donate</button>
+                                <div class="powered-by">Thank you for your donation!</div>
+                        </footer>
+                </div>
+        </div>
+<script src="scripts.js"></script>
+</body>
+</html>
