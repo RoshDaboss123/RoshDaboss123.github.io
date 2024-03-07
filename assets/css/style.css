@@ -1483,9 +1483,17 @@ textarea.input-field {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: left;
+    display: flex;
   }
 
-  .special-dish-content { padding-inline: 50px 25px; }
+  .special-dish-banner {
+        flex: 60%;
+  }
+
+  .special-dish-content { 
+        padding-inline: 50px 25px;
+        flex: 40%; 
+  }
 
   .special-dish-content .container { position: relative; }
 
