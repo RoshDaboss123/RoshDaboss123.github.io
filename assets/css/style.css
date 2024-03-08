@@ -1487,13 +1487,13 @@ textarea.input-field {
   }
 
   .special-dish-banner {
-        flex: 60%;
+        flex: 70%;
   }
 
   .special-dish-content { 
         padding-inline: 50px 25px;
-        flex: 40%; 
-  }
+        flex: 30%; 
+        }
 
   .special-dish-content .container { position: relative; }
 
