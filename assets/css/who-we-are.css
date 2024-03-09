@@ -193,25 +193,6 @@
   
   .h5 { font-size: var(--fs-6); }
   
-  .btn {
-    color: var(--white);
-    font-size: var(--fs-6);
-    font-weight: var(--fw-700);
-    border: 2px solid var(--white);
-    max-width: max-content;
-    padding: 12px 28px;
-    border-radius: var(--radius-pill);
-    transition: var(--transition-1);
-    will-change: transform;
-  }
-  
-  .btn:is(:hover, :focus-visible) { transform: translateY(-4px); }
-  
-  .btn-primary,
-  .btn-outline:is(:hover, :focus-visible) {
-    background-color: var(--white);
-    color: var(--charcoal);
-  }
   
   .img-holder-wwa {
     aspect-ratio: var(--width) / var(--height);
