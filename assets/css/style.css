@@ -1484,6 +1484,10 @@ textarea.input-field {
     grid-template-columns: 1fr 1fr;
     text-align: left;
     display: flex;
+    border: 2px solid rgb(0, 195, 255);
+    max-width: 90%; 
+    margin: auto; 
+    padding: 10px; 
   }
 
   .special-dish-banner {
